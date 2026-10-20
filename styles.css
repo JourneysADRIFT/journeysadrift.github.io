@@ -1,0 +1,212 @@
+/* TEMPLE OS 16-COLOR PALETTE & 90S HEAVEN'S GATE GEOMETRY */
+
+:root {
+    --temple-yellow: #FFFF00;
+    --temple-blue: #0000AA;
+    --temple-cyan: #00AAAA;
+    --temple-red: #AA0000;
+    --temple-magenta: #AA00AA;
+    --temple-white: #FFFFFF;
+    --temple-black: #000000;
+    --temple-green: #00AA00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--temple-black);
+    color: var(--temple-yellow);
+    font-family: "Courier New", Courier, monospace, "Lucida Console";
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+/* GOD SYSTEM STATUS BAR */
+#god-notice {
+    background-color: var(--temple-red);
+    color: var(--temple-white);
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+    border-bottom: 2px solid var(--temple-yellow);
+}
+
+/* HEADER SECTION */
+header {
+    background-color: var(--temple-blue);
+    color: var(--temple-white);
+    text-align: center;
+    padding: 10px;
+    border-bottom: 4px ridge var(--temple-cyan);
+}
+
+header h1 {
+    margin: 5px 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #000;
+}
+
+.subtitle {
+    color: var(--temple-yellow);
+    font-weight: bold;
+}
+
+.comet-banner marquee {
+    background-color: var(--temple-magenta);
+    color: var(--temple-white);
+    font-weight: bold;
+    padding: 2px 0;
+}
+
+/* MAIN LAYOUT CONTAINER */
+.container {
+    display: flex;
+    max-width: 800px;
+    margin: 10px auto;
+    border: 4px groove var(--temple-white);
+    background-color: var(--temple-black);
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background-color: var(--temple-black);
+    border-right: 4px groove var(--temple-white);
+    padding: 10px;
+}
+
+.sys-box {
+    border: 2px solid var(--temple-cyan);
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.sys-title {
+    background-color: var(--temple-cyan);
+    color: var(--temple-black);
+    font-weight: bold;
+    padding: 2px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    color: var(--temple-yellow);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background-color: var(--temple-yellow);
+    color: var(--temple-black);
+}
+
+.portal-box {
+    border: 2px dashed var(--temple-magenta);
+    padding: 10px;
+    text-align: center;
+    color: var(--temple-white);
+}
+
+.star-graphic {
+    width: 80px;
+    height: 80px;
+    background-color: var(--temple-blue);
+    border: 2px solid var(--temple-yellow);
+    margin: 5px auto;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    flex: 1;
+    padding: 10px;
+}
+
+.god-console {
+    background-color: var(--temple-blue);
+    border: 3px double var(--temple-white);
+    color: var(--temple-white);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.god-console h2 {
+    margin-top: 0;
+    font-size: 16px;
+    color: var(--temple-yellow);
+    border-bottom: 1px solid var(--temple-yellow);
+}
+
+.console-text {
+    font-family: monospace;
+    color: var(--temple-cyan);
+}
+
+.text-block {
+    border: 2px solid var(--temple-yellow);
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #000044;
+}
+
+.text-block h2 {
+    margin-top: 0;
+    color: var(--temple-white);
+}
+
+.oracle-block {
+    border: 2px solid var(--temple-green);
+    padding: 10px;
+}
+
+.oracle-box {
+    background-color: var(--temple-black);
+    color: var(--temple-green);
+    border: 1px solid var(--temple-green);
+    padding: 8px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--temple-blue);
+    color: var(--temple-white);
+    text-align: center;
+    padding: 10px;
+    border-top: 4px ridge var(--temple-cyan);
+    margin-top: 10px;
+}
+
+.counter {
+    background-color: var(--temple-black);
+    color: var(--temple-red);
+    padding: 2px 6px;
+    border: 1px solid var(--temple-white);
+    font-weight: bold;
+}
+
+/* 90S BLINKING TEXT CLASS */
+.blink-text {
+    color: var(--temple-yellow);
+    font-weight: bold;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
