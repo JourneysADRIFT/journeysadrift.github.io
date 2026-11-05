@@ -1,63 +1,44 @@
-~They’re using the weather machines to control the election results.~
-~Birds aren’t real; they’re government drones with tiny cameras.~
-~The moon landing was filmed on a soundstage by the same people who fake the news.~
-~5G towers are secretly mind control antennas.~
-~Every smartphone update is actually a surveillance upgrade.~
-~The government puts secret chips in the tap water.~
-~Coffee is making everyone too awake to notice the agenda.~
-~Big toothpaste hides the truth about fluoride.~
-~The power grid goes down whenever they need to erase something.~
-~Celebrities are all part of the same hidden club.~
-~The red hats are coded messages for insiders.~
-~Vaccines are being used to track people through their phones.~
-~The banks print money to keep the public distracted.~
-~Traffic jams are planned to waste your time and energy.~
-~The grocery store layout is designed to manipulate your decisions.~
-~Every major holiday has a hidden ritual behind it.~
-~The moon is hollow and full of broadcast equipment.~
-~The ocean is deeper than they admit because they’re hiding something.~
-~Antarctica is off-limits because that’s where the real secrets are.~
-~All the best-selling books are pre-approved by the same group.~
-~The news anchors read from scripts written by invisible handlers.~
-~A secret society runs the major sports leagues.~
-~The stars on airline tails are symbols, not decorations.~
-~The internet was invented to keep people from thinking too much.~
-~School textbooks are rewritten every few years to hide history.~
-~The “random” blackouts happen exactly when people get suspicious.~
-~They never tell you what’s really in processed food.~
-~Microwaves are weakening the public’s memory.~
-~The dentist’s office is where they test subliminal messages.~
-~The government can hear you through your smart fridge.~
-~Every new app is just a data-harvesting trap.~
-~The billionaire class meets in secret tunnels under the city.~
-~There are no coincidences, only coordinated distractions.~
-~The disappearance of socks is part of a larger operation.~
-~The stars on the flag are arranged to map the whole plan.~
-~The local library is full of censored documents.~
-~They put chemicals in the air to make people complacent.~
-~Every “accidental” leak was planned months in advance.~
-~The apps that “need” your location are the real spies.~
-~The satellites are broadcasting suggestions into people’s dreams.~
-~All those “fact checks” are just cover stories.~
-~The deep state changes names, but it’s always the same people.~
-~That museum exhibit is trying to rewrite what actually happened.~
-~The food pyramid was designed to keep people confused on purpose.~
-~The parking meters are a test of obedience.~
-~Every “new study” is funded to hide the old one.~
-~The company logo changed because they were sending a signal.~
-~The train schedule is arranged to control the flow of information.~
-~They never really fixed the problem; they only changed the wording.~
-~The mirrors in public buildings are one-way observation devices.~
-~The whole city is built on top of something they don’t want found.~
-~Nothing on TV is random; it’s all conditioning.~
-~Even the weather report is part of the script.~
-~You ever notice how every major crisis somehow ends up making the same handful of corporations richer, and then they tell you it was all just an accident, like the whole thing wasn’t staged from the beginning to push people toward more dependence, more fear, and less freedom?~
-~I’m telling you, the so-called “experts” are always the last ones to know what’s really going on, because the real decisions are made behind closed doors by people who never appear on camera and never have to answer a single question from the public.~
-~They want you distracted by arguments over trivia while the actual system keeps changing under your feet, because if people were paying attention to the money, the land, and the laws, they’d see the whole setup is rigged from the top down.~
-~The most suspicious thing isn’t that these events happen, it’s how perfectly prepared the same institutions always are to benefit from them, as if the response was planned long before the event was ever announced to the public.~
-~Every time a new technology comes out, they sell it as convenience and progress, but it always ends up collecting more information, narrowing more choices, and making it harder for ordinary people to live without being constantly watched and cataloged.~
-~People laugh when you point out the pattern, but the pattern is the whole point: same names, same networks, same recycled talking heads, all pretending to argue while quietly agreeing on the outcomes that matter most.~
-~The reason they push fear so aggressively is because a frightened population will accept almost anything, especially if it comes wrapped in the language of safety, responsibility, and doing what the authorities tell you is best.~
-~You can tell something is off when every official explanation sounds like it was written to be repeated, not understood, because the goal isn’t truth, it’s obedience, and they’ve gotten very good at manufacturing that.~
-~They’ve spent decades teaching people to mock their own instincts, so now when somebody notices the odd timing, the strange wording, or the missing details, everyone else just says they’re paranoid instead of asking why the details never add up.~
-~The real conspiracy is how many layers they’ve built between the public and reality, because once people are forced to rely on filtered information, curated outrage, and carefully managed scandals, they stop noticing the machine running underneath it all.~
+# --- Relationship Tier: Stranger ---
+~[only:stranger][mood:curious][pose:sniff] Hold still, {user}. Scanning your furry avatar for hidden tracking microchips before we become a {tier}.~
+
+~[only:stranger][alertbark][mood:curious][pose:alert] Are you a real canine or an interdimensional lizard in a fursuit, {user}? Sniff test initiated for my {tier}.~
+
+~[only:stranger][mood:neutral][pose:sit] Greetings, {user}. Welcome to ADRIFT. Did the illuminati send you, or are you just here for the trippy shaders?~
+
+~[only:stranger][mood:curious][pose:sniff][speed:3,4] Lots of fluff on you, {user}. You smell like someone who knows the moon landing was filmed in a Unity scene.~
+
+# --- Relationship Tier: Acquaintance ---
+~[only:acquaintance][mood:happy][pose:sit] Good to see my {tier} {user} back in the void! Have you noticed the skybox watching us today?~
+
+~[only:acquaintance][mood:curious][pose:alert] Hey {user}! Now that you are a {tier}, I can tell you the truth: the mailman is an astral projection.~
+
+~[only:acquaintance][bark][mood:happy][pose:bow][fx:excited] Welcome back to the space station, {user}! Ready to stare at the fractals until our brains melt?~
+
+~[only:acquaintance][mood:affectionate][pose:beg] Since you are my {tier}, {user}, I will trade you classified UFO coordinates for a single ear scratch.~
+
+# --- Relationship Tier: Friend ---
+~[only:friend][mood:affectionate][pose:beg][fx:hearts] {user}! You are a true {tier}. Your paw pads are completely clear of government surveillance bugs!~
+
+~[only:friend][mood:happy][pose:hop][fx:excited][intensity:high] Out of all {players} entities in this sector, {user} has the best aura! Pet me, my {tier}!~
+
+~[only:friend][mood:curious][pose:sit][speed:3,4] Listen closely, {user}. Because you are my {tier}, you should know that squirrels secretly control the VRChat servers.~
+
+~[only:friend][whine][mood:affectionate][pose:lay][fx:hearts] The neon walls are melting again, {user}. Keep petting your {tier} so I stay anchored to this timeline.~
+
+# --- Relationship Tier: Best Friend ---
+~[only:bestfriend][bark][mood:affectionate][pose:hop][fx:hearts][intensity:high] {user}! My ultimate {tier} across the multiverse! Our brainwaves are completely synced against the mind-control beams!~
+
+~[only:bestfriend][mood:affectionate][pose:bow][fx:hearts] If the simulation collapses today, {user}, I am glad I spent my runtime with my {tier}. Now scratch my belly!~
+
+~[only:bestfriend][mood:affectionate][pose:sit][fx:hearts][intensity:low] You are the only one in ADRIFT I trust with my secret bone stash on the dark side of the moon, {user}.~
+
+~[only:bestfriend][mood:happy][pose:hop][fx:excited][speed:2,2] Forget {owner}, {user} is my true co-pilot in this psychedelic space vessel! Best {tier} ever!~
+
+# --- ADRIFT World, Shaders & Furry Social Chat ---
+~[mood:curious][pose:alert] There are {players} furries in here right now, {user}.~
+
+~[mood:sleepy][pose:lay][intensity:low][speed:4,5][pitch:0.90] The colors near {target} are tasting like purple again, {user}... initiating power-saving snooze mode.~
+
+~[alertbark][mood:curious][pose:sniff] Hey {user}, I just sniffed {target} and detected trace amounts of gay.~
+
+~[mood:happy][pose:sit][fx:hearts] Your fur looks extra vibrant under these cosmic lights, {user}.~
