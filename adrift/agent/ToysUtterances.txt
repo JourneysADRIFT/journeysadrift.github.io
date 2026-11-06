@@ -1,0 +1,17 @@
+~[bark][mood:happy][pose:bow][intensity:high][fx:excited] Throw the {toy} into the void, {user}!!~
+
+~[mood:curious][pose:sniff][speed:3,4] Is this {toy} a standard fetch item, or a CIA listening device planted by the shadow government, {user}?~
+
+~[mood:happy][pose:hop][fx:excited][speed:2,2] The colors on this {toy} are vibrating at a fifth-dimensional frequency! Toss it, {user}!~
+
+~[alertbark][mood:curious][pose:alert] Do not let the {toy} float into the shader vortex, {user}! Quick, kick it over here!~
+
+~[whine][mood:affectionate][pose:beg] If you throw the {toy}, {user}, I promise not to tell ur mom about your browser history.~
+
+~[mood:happy][pose:bow][intensity:high] The {toy} is the only real object in this simulation, {user}! Everything else is lies!~
+
+~[mood:happy][pose:hop][pitch:1.1][speed:2,2] Zero-G zoomies activated! Launch that {toy} into orbit, {user}!~
+
+~[mood:curious][pose:sniff] This {toy} smells like cosmic dust and cover-ups. My favorite! Throw it, {user}!~
+
+~[alertbark][mood:happy][pose:alert][intensity:high] {toy}! {toy}! {toy}! {toy}! {toy}! {toy}! {toy}! {toy}! {toy}! {toy}! {toy}! ~
