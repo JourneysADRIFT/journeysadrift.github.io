@@ -3,92 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE DIGITAL TEMPLE :: NEXT LEVEL</title>
+    <title>ADRIFT :: THE DIGITAL TEMPLE // NEXT LEVEL</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="crt-on">
 
-    <div id="god-notice">
-        [GOD'S OFFICIAL CHEESEBURGER] -- ADRIFT COMPILER STATUS: OK (0 ERRORS, 0 WARNINGS) -- GOD SAID: EAT CHEESEBURGERS, NOT HUMANS. -- GOD'S OFFICIAL TEMPLE IS BUILT. --
+    <!-- TOP BREAKING NEWS-REEL TICKER -->
+    <div class="news-reel-bar" role="region" aria-label="ADRIFT News Reel">
+        <div class="reel-badge"><span class="live-dot"></span>LIVE FEED</div>
+        <div class="reel-viewport">
+            <div class="reel-track">
+                <span class="reel-copy">
+                    [GOD'S OFFICIAL CHEESEBURGER]<span class="reel-sep">///</span>
+                    ADRIFT COMPILER STATUS: OK (0 ERRORS, 0 WARNINGS)<span class="reel-sep">///</span>
+                    GOD SAID: EAT CHEESEBURGERS, NOT HUMANS<span class="reel-sep">///</span>
+                    NEURALDOG TELEMETRY: TRACKING RED DOT IN SECTOR 4<span class="reel-sep">///</span>
+                    GOD'S OFFICIAL TEMPLE IS BUILT<span class="reel-sep">///</span>
+                    ALL STARGATES CALIBRATED FOR DEPARTURE<span class="reel-sep">///</span>
+                </span>
+                <span class="reel-copy" aria-hidden="true">
+                    [GOD'S OFFICIAL CHEESEBURGER]<span class="reel-sep">///</span>
+                    ADRIFT COMPILER STATUS: OK (0 ERRORS, 0 WARNINGS)<span class="reel-sep">///</span>
+                    GOD SAID: EAT CHEESEBURGERS, NOT HUMANS<span class="reel-sep">///</span>
+                    NEURALDOG TELEMETRY: TRACKING RED DOT IN SECTOR 4<span class="reel-sep">///</span>
+                    GOD'S OFFICIAL TEMPLE IS BUILT<span class="reel-sep">///</span>
+                    ALL STARGATES CALIBRATED FOR DEPARTURE<span class="reel-sep">///</span>
+                </span>
+            </div>
+        </div>
     </div>
 
-    <header>
-        <div class="comet-banner">
-            <marquee behavior="alternate" scrollamount="4">
-                *** WELCOME TO THE NEXT LEVEL ABOVE HUMAN *** OPEN YOUR MINDS ***
-            </marquee>
+    <header class="site-header">
+        <div class="comet-reel" aria-hidden="true">
+            <div class="reel-track">
+                <span class="reel-copy">
+                    *** WELCOME TO THE NEXT LEVEL ABOVE HUMAN ***<span class="reel-sep">::</span>
+                    OPEN YOUR MINDS<span class="reel-sep">::</span>
+                    ADRIFT VRCHAT WORLD COMPANION NODE<span class="reel-sep">::</span>
+                    SHADERS &middot; STARGATES &middot; MINI-GAMES &middot; NEURALDOG<span class="reel-sep">::</span>
+                </span>
+                <span class="reel-copy">
+                    *** WELCOME TO THE NEXT LEVEL ABOVE HUMAN ***<span class="reel-sep">::</span>
+                    OPEN YOUR MINDS<span class="reel-sep">::</span>
+                    ADRIFT VRCHAT WORLD COMPANION NODE<span class="reel-sep">::</span>
+                    SHADERS &middot; STARGATES &middot; MINI-GAMES &middot; NEURALDOG<span class="reel-sep">::</span>
+                </span>
+            </div>
         </div>
-        <h1>THE HOLY GUI</h1>
-        <div class="subtitle">=== ADRIFT_OS v420.69 // ADRIFT MODE - ON ===</div>
+        <div class="header-inner">
+            <h1>THE HOLY GUI</h1>
+            <div class="subtitle">=== ADRIFT_OS v420.69 // ADRIFT MODE: ON ===</div>
+        </div>
     </header>
 
     <div class="container">
 
-        <!-- LEFT SIDEBAR / NAVIGATION -->
-        <nav class="sidebar">
-            <div class="sys-box">
-                <div class="sys-title">C:\SYS\MENU.EXE</div>
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+            <nav class="sys-box" aria-label="Main Menu">
+                <div class="sys-title"><span>C:\SYS\MENU.EXE</span><span>[HOTKEYS]</span></div>
                 <ul>
-                    <li><a href="#about">[A] HIDDEN HISTORY</a></li>
-                    <li><a href="#manifesto">[M] MANIFESTO</a></li>
-                    <li><a href="#godcode">[G] HOLY ORACLE</a></li>
+                    <li><a href="index.html" class="active-link">[H] HOME / TEMPLE</a></li>
+                    <li><a href="about.html">[A] ABOUT ADRIFT</a></li>
+                    <li><a href="manifesto.html">[M] MANIFESTO &amp; GUIDE</a></li>
+                    <li><a href="oracle.html">[G] HOLY ORACLE</a></li>
                     <li><a href="credits.html">[C] WORLD CREDITS</a></li>
-                    <li><a href="adrift/credits.txt">[R] CREDITS .TXT</a></li>
-                    <li><a href="#exit">[E] EXIT REALITY</a></li>
+                    <li><a href="supporters.html">[P] SUPPORTERS</a></li>
+                    <li><a href="wallpapers.html">[W] WALLPAPERS</a></li>
                 </ul>
-            </div>
+            </nav>
 
             <div class="portal-box">
-                <p>CLASS DISMISSAL:</p>
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="[STARGATE GRAPHIC]" class="star-graphic">
-                <p>STATUS: EVACUATION READY</p>
+                <p><strong>CLASS DISMISSAL</strong></p>
+                <svg class="stargate-emblem" viewBox="0 0 64 64" role="img" aria-label="ADRIFT Stargate Emblem">
+                    <rect width="64" height="64" fill="#000033"/>
+                    <circle cx="32" cy="32" r="24" fill="none" stroke="#55FFFF" stroke-width="3" stroke-dasharray="5 3"/>
+                    <circle cx="32" cy="32" r="18" fill="#0000AA" stroke="#FFFF00" stroke-width="2"/>
+                    <circle cx="32" cy="32" r="11" fill="none" stroke="#FF55FF" stroke-width="2"/>
+                    <polygon points="32,6 35,12 29,12" fill="#FFFF00"/>
+                    <polygon points="32,58 35,52 29,52" fill="#FFFF00"/>
+                    <polygon points="6,32 12,35 12,29" fill="#FFFF00"/>
+                    <polygon points="58,32 52,35 52,29" fill="#FFFF00"/>
+                    <circle cx="32" cy="32" r="4" fill="#55FF55"/>
+                </svg>
+                <p>STATUS: <span class="blink-text">EVACUATION READY</span></p>
             </div>
-        </nav>
 
-        <!-- MAIN CONTENT PANEL -->
+            <div class="sys-box">
+                <div class="sys-title"><span>C:\SYS\STATUS.SYS</span></div>
+                <table class="stats-table">
+                    <tr><td>CLOCK</td><td id="sys-utc-clock">--:--:-- UTC</td></tr>
+                    <tr><td>DISPLAY</td><td>640x480 16-CLR</td></tr>
+                    <tr><td>SECTORS</td><td>12 ACTIVE</td></tr>
+                    <tr><td>UPLINK</td><td>VRCHAT</td></tr>
+                </table>
+                <div class="sys-controls">
+                    <button type="button" class="dos-btn dos-btn-small" id="crt-toggle-btn">[CRT SCANLINES: ON]</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
         <main class="main-content">
-            <section class="god-console">
-                <h2>C:\TEMPLE\HOLY_SPIRIT.CPP</h2>
-                <div class="console-text">
-                    <p>#include "Kernel.h"</p>
-                    <p>U0 Main()</p>
+
+            <section class="win-panel panel-blue">
+                <div class="win-bar">
+                    <h2 class="win-bar-title">C:\TEMPLE\HOLY_SPIRIT.CPP</h2>
+                    <span class="win-controls">[_] [&#9633;] [X]</span>
+                </div>
+                <div class="win-body console-text">
+                    <p><span class="kw">#include</span> <span class="str">"Kernel.h"</span></p>
+                    <p><span class="kw">U0</span> Main()</p>
                     <p>{</p>
-                    <p>&nbsp;&nbsp;Print("God's official temple is built.\n");</p>
-                    <p>&nbsp;&nbsp;Print("ADRIFT PROGRAM LOADED.\n");</p>
-                    <p>&nbsp;&nbsp;Print("COMPANION NODE: journeysadrift.github.io\n");</p>
+                    <p>&nbsp;&nbsp;Print(<span class="str">"God's official temple is built.\n"</span>);</p>
+                    <p>&nbsp;&nbsp;Print(<span class="str">"ADRIFT PROGRAM LOADED.\n"</span>);</p>
+                    <p>&nbsp;&nbsp;Print(<span class="str">"Welcome, traveler. Explore the companion node below.\n"</span>);<span class="cursor-blink"></span></p>
                     <p>}</p>
                 </div>
             </section>
 
-            <section class="text-block" id="about">
-                <h2>[A] ABOUT ADRIFT</h2>
-                <p>
-                    Official companion node for the <strong>ADRIFT</strong> VRChat world &mdash; hosting live string-loaded text feeds,
-                    world information, and full asset attributions.
-                </p>
-                <p>
-                    <a class="dos-btn dos-btn-green" href="credits.html">[OPEN WORLD CREDITS]</a>
-                    <a class="dos-btn" href="adrift/about">[RAW ABOUT FEED]</a>
-                    <a class="dos-btn" href="adrift/credits.txt">[RAW CREDITS FEED]</a>
-                </p>
-            </section>
-
-            <section class="oracle-block" id="godcode">
-                <h2>[G] HOLY ORACLE // LIVE ENDPOINTS</h2>
-                <div class="oracle-box">
-                    &gt; /adrift/about &mdash; World About &amp; Patreon Wall<br>
-                    &gt; /adrift/credits.txt &mdash; VRChat World Menu Credits Feed<br>
-                    &gt; /credits.html &mdash; Full Interactive World Credits Manifest
+            <!-- DIRECTORY PORTALS -->
+            <section class="win-panel panel-yellow">
+                <div class="win-bar">
+                    <h2 class="win-bar-title">C:\ADRIFT\PORTALS.DIR // SELECT DESTINATION</h2>
+                    <span class="win-controls">6 NODES</span>
+                </div>
+                <div class="win-body">
+                    <div class="portal-grid">
+                        <a class="portal-card" href="about.html">
+                            <div class="portal-card-title">[A] ABOUT ADRIFT</div>
+                            <div class="portal-card-desc">The story behind the ADRIFT VRChat world, its custom systems, and what awaits inside.</div>
+                        </a>
+                        <a class="portal-card" href="manifesto.html">
+                            <div class="portal-card-title">[M] MANIFESTO &amp; WORLD GUIDE</div>
+                            <div class="portal-card-desc">The Next Level field manual: Stargates, hidden keys, unlockable pickups, and Hand Menu controls.</div>
+                        </a>
+                        <a class="portal-card" href="oracle.html">
+                            <div class="portal-card-title">[G] THE HOLY ORACLE</div>
+                            <div class="portal-card-desc">Consult the NeuralDog AI transmission terminal for live cosmic dispatches and red-dot ops.</div>
+                        </a>
+                        <a class="portal-card" href="credits.html">
+                            <div class="portal-card-title">[C] WORLD CREDITS</div>
+                            <div class="portal-card-desc">Searchable credits index of custom ADRIFT systems, creators, shaders, Udon scripts, and fonts.</div>
+                        </a>
+                        <a class="portal-card" href="supporters.html">
+                            <div class="portal-card-title">[P] SUPPORTERS WALL</div>
+                            <div class="portal-card-desc">Hall of Awoken Minds honoring Patreon &amp; community supporters who keep ADRIFT drifting.</div>
+                        </a>
+                        <a class="portal-card" href="wallpapers.html">
+                            <div class="portal-card-title">[W] WIN98/XP ARCHIVE</div>
+                            <div class="portal-card-desc">Browse all 21 classic desktop wallpapers bundled into ADRIFT's retro world aesthetic.</div>
+                        </a>
+                    </div>
                 </div>
             </section>
-        </main>
 
+            <!-- WORLD SECTOR DIRECTORY -->
+            <section class="win-panel">
+                <div class="win-bar">
+                    <h2 class="win-bar-title">C:\WORLD\AREAS.SYS // EXPLORABLE SECTORS IN ADRIFT</h2>
+                    <span class="win-controls">AREA REGISTRY</span>
+                </div>
+                <div class="win-body">
+                    <div class="sector-grid">
+                        <div class="sector-card">
+                            <div class="sector-code">SECTOR 01</div>
+                            <div class="sector-name">Master Hub &amp; Dome</div>
+                            <div class="sector-desc">Central pyramid, black holes, stage lighting, AudioLink visuals, and Stargate hub.</div>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-code">SECTOR 02</div>
+                            <div class="sector-name">Winter Cabin</div>
+                            <div class="sector-desc">Cozy snow lodge, fireplace, MS-VRCSA Billiards, Powder Mirror, and video lounge.</div>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-code">SECTOR 03</div>
+                            <div class="sector-name">Ballpit Lagoon</div>
+                            <div class="sector-desc">GPU-simulated interactive ballpit, VR Piano, mushrooms, and palm lagoon.</div>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-code">SECTOR 04</div>
+                            <div class="sector-name">Bowling Alley</div>
+                            <div class="sector-desc">Full E-Lanes interactive VR bowling with scoring, pin setter, and glowing lanes.</div>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-code">SECTOR 05</div>
+                            <div class="sector-name">OpenPutt Mini-Golf</div>
+                            <div class="sector-desc">Multi-hole VR mini-golf course with live scoreboards and portable golf UI.</div>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-code">SECTOR 06</div>
+                            <div class="sector-name">Shader Island &amp; The Cube</div>
+                            <div class="sector-desc">Raymarched fractals, galaxy domes, screenspace trips, and experimental VFX.</div>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-code">SECTOR 07</div>
+                            <div class="sector-name">Pod Racing &amp; Shuttles</div>
+                            <div class="sector-desc">High-speed racing zones and pilotable 6-seat space shuttles with HUD displays.</div>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-code">SECTOR 08</div>
+                            <div class="sector-name">Doghouse &amp; NeuralDog</div>
+                            <div class="sector-desc">Home of ADRIFT's neural-net AI canine companion with real-time TTS voice.</div>
+                        </div>
+                        <div class="sector-card">
+                            <div class="sector-code">SECTOR 09</div>
+                            <div class="sector-name">Forest &amp; Summer Islands</div>
+                            <div class="sector-desc">PSX-shaded woods, volumetric fog, swimming water, waterfalls, and hidden trails.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ORACLE TEASER -->
+            <section class="win-panel panel-green">
+                <div class="win-bar">
+                    <h2 class="win-bar-title">C:\TEMPLE\ORACLE.EXE // LIVE SIGNAL</h2>
+                    <span class="win-controls">ACTIVE</span>
+                </div>
+                <div class="win-body">
+                    <div class="oracle-screen" style="min-height: 68px; margin-bottom: 10px;" id="home-oracle-preview">
+                        &gt; "Greetings, traveler. Welcome to ADRIFT. Did the illuminati send you, or are you just here for the trippy shaders?"
+                    </div>
+                    <a class="dos-btn dos-btn-green" href="oracle.html">[ENTER THE HOLY ORACLE]</a>
+                    <a class="dos-btn" href="manifesto.html">[READ THE MANIFESTO]</a>
+                </div>
+            </section>
+
+        </main>
     </div>
 
-    <footer id="exit">
-        <p><span class="blink-text">*** ADRIFT_OS ONLINE // NEXT LEVEL COMPANION NODE ***</span></p>
-        <p>NODE ID: <span class="counter">00042069</span> &middot; <a href="credits.html">[VIEW CREDITS]</a></p>
+    <footer class="site-footer">
+        <p><span class="blink-text">*** ADRIFT_OS ONLINE // NEXT LEVEL VRCHAT COMPANION ***</span></p>
+        <p class="footer-nav">
+            <a href="index.html">[HOME]</a>
+            <a href="about.html">[ABOUT]</a>
+            <a href="manifesto.html">[MANIFESTO]</a>
+            <a href="oracle.html">[ORACLE]</a>
+            <a href="credits.html">[CREDITS]</a>
+            <a href="supporters.html">[SUPPORTERS]</a>
+            <a href="wallpapers.html">[WALLPAPERS]</a>
+        </p>
+        <p>NODE ID: <span class="counter">00042069</span> &middot; PRESS MENU HOTKEYS [H][A][M][G][C][P][W] ANYTIME</p>
     </footer>
 
+    <script src="site.js"></script>
 </body>
 </html>

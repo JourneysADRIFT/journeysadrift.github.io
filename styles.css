@@ -1,130 +1,267 @@
-/* TEMPLE OS 16-COLOR PALETTE & EARLY-2000S HEAVEN'S GATE GEOMETRY */
+/* ============================================================================
+   ADRIFT_OS v420.69 :: TEMPLE OS 16-COLOR VGA & EARLY-2000s HEAVEN'S GATE CSS
+   ============================================================================ */
 
 :root {
-    --temple-yellow: #FFFF00;
-    --temple-blue: #0000AA;
-    --temple-cyan: #00AAAA;
-    --temple-bright-cyan: #55FFFF;
-    --temple-red: #AA0000;
-    --temple-bright-red: #FF5555;
-    --temple-magenta: #AA00AA;
-    --temple-bright-magenta: #FF55FF;
-    --temple-white: #FFFFFF;
-    --temple-gray: #AAAAAA;
-    --temple-dark-gray: #555555;
-    --temple-black: #000000;
-    --temple-green: #00AA00;
-    --temple-bright-green: #55FF55;
+    --vga-black: #000000;
+    --vga-blue: #0000AA;
+    --vga-deep-blue: #000038;
+    --vga-green: #00AA00;
+    --vga-cyan: #00AAAA;
+    --vga-red: #AA0000;
+    --vga-magenta: #AA00AA;
+    --vga-brown: #AA5500;
+    --vga-gray: #AAAAAA;
+    --vga-dark-gray: #555555;
+    --vga-bright-blue: #5555FF;
+    --vga-bright-green: #55FF55;
+    --vga-bright-cyan: #55FFFF;
+    --vga-bright-red: #FF5555;
+    --vga-bright-magenta: #FF55FF;
+    --vga-yellow: #FFFF55;
+    --vga-pure-yellow: #FFFF00;
+    --vga-white: #FFFFFF;
 }
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: var(--temple-black);
+    background-color: var(--vga-black);
     background-image:
-        radial-gradient(1px 1px at 17% 23%, rgba(255, 255, 255, 0.45), transparent),
-        radial-gradient(1px 1px at 64% 12%, rgba(85, 255, 255, 0.35), transparent),
-        radial-gradient(1px 1px at 82% 48%, rgba(255, 255, 0, 0.35), transparent),
-        radial-gradient(1px 1px at 31% 74%, rgba(255, 255, 255, 0.35), transparent),
-        radial-gradient(1px 1px at 91% 83%, rgba(255, 85, 255, 0.3), transparent);
-    background-size: 260px 260px;
-    color: var(--temple-yellow);
-    font-family: "Courier New", Courier, monospace, "Lucida Console";
+        radial-gradient(1px 1px at 11% 19%, rgba(255, 255, 255, 0.65), transparent),
+        radial-gradient(1px 1px at 29% 73%, rgba(85, 255, 255, 0.55), transparent),
+        radial-gradient(1px 1px at 47% 31%, rgba(255, 255, 85, 0.45), transparent),
+        radial-gradient(2px 2px at 66% 14%, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 78% 58%, rgba(255, 85, 255, 0.45), transparent),
+        radial-gradient(1px 1px at 91% 84%, rgba(255, 255, 255, 0.55), transparent),
+        radial-gradient(1px 1px at 19% 89%, rgba(85, 255, 85, 0.35), transparent);
+    background-size: 280px 280px;
+    color: var(--vga-pure-yellow);
+    font-family: "Courier New", Courier, "Lucida Console", monospace;
     margin: 0;
     padding: 0;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 1.4;
+    min-height: 100vh;
+}
+
+/* Optional subtle CRT scanline overlay (toggled via sidebar) */
+body.crt-on::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0px,
+        rgba(0, 0, 0, 0) 2px,
+        rgba(0, 0, 0, 0.16) 3px,
+        rgba(0, 0, 0, 0.16) 4px
+    );
 }
 
 a {
-    color: var(--temple-bright-cyan);
+    color: var(--vga-bright-cyan);
+    text-decoration: underline;
 }
 
 a:hover {
-    background-color: var(--temple-yellow);
-    color: var(--temple-black);
+    background-color: var(--vga-pure-yellow);
+    color: var(--vga-black);
     text-decoration: none;
 }
 
-/* GOD SYSTEM STATUS BAR */
-#god-notice {
-    background-color: var(--temple-red);
-    color: var(--temple-white);
+/* ============================================================================
+   NEWS-REEL TICKER HEADERS (SEAMLESS CONTINUOUS BROADCAST SCROLL)
+   ============================================================================ */
+
+.news-reel-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--vga-red);
+    color: var(--vga-white);
+    border-bottom: 2px solid var(--vga-pure-yellow);
+    overflow: hidden;
     font-weight: bold;
-    text-align: center;
-    padding: 4px 8px;
-    border-bottom: 2px solid var(--temple-yellow);
-    letter-spacing: 0.5px;
+    font-size: 13px;
+    line-height: 1;
 }
 
-/* HEADER SECTION */
-header {
-    background-color: var(--temple-blue);
-    color: var(--temple-white);
-    text-align: center;
-    padding: 10px;
-    border-bottom: 4px ridge var(--temple-cyan);
+.reel-badge {
+    flex-shrink: 0;
+    background-color: var(--vga-pure-yellow);
+    color: var(--vga-black);
+    padding: 6px 10px;
+    letter-spacing: 1px;
+    border-right: 2px solid var(--vga-black);
+    z-index: 2;
+    white-space: nowrap;
 }
 
-header h1 {
-    margin: 6px 0 4px;
-    font-size: 26px;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px #000;
+.reel-badge .live-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--vga-red);
+    margin-right: 5px;
+    vertical-align: middle;
+    animation: blinker 1s steps(2, start) infinite;
+}
+
+.reel-viewport {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 6px 0;
+}
+
+.reel-track {
+    display: inline-flex;
+    width: max-content;
+    will-change: transform;
+    animation: news-reel-scroll 38s linear infinite;
+}
+
+.news-reel-bar:hover .reel-track,
+.comet-reel:hover .reel-track {
+    animation-play-state: paused;
+}
+
+.reel-copy {
+    display: inline-block;
+    padding-right: 48px;
+    letter-spacing: 0.6px;
+}
+
+.reel-sep {
+    color: var(--vga-pure-yellow);
+    margin: 0 14px;
+}
+
+@keyframes news-reel-scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+/* MAIN HEADER */
+header.site-header {
+    background-color: var(--vga-blue);
+    background-image: linear-gradient(
+        180deg,
+        #0000cc 0%,
+        #0000aa 55%,
+        #000077 100%
+    );
+    color: var(--vga-white);
+    text-align: center;
+    padding: 0 0 12px 0;
+    border-bottom: 4px ridge var(--vga-cyan);
+    box-shadow: 0 4px 0 rgba(0, 170, 170, 0.25);
+}
+
+.comet-reel {
+    background-color: var(--vga-magenta);
+    color: var(--vga-white);
+    border-bottom: 2px solid var(--vga-white);
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px 0;
+}
+
+.comet-reel .reel-track {
+    animation-duration: 30s;
+}
+
+.comet-reel .reel-sep {
+    color: var(--vga-bright-cyan);
+}
+
+.header-inner {
+    padding: 10px 14px 2px;
+}
+
+header.site-header h1 {
+    margin: 4px 0 4px;
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: var(--vga-white);
+    text-shadow: 3px 3px 0 var(--vga-black);
+    text-transform: uppercase;
 }
 
 .subtitle {
-    color: var(--temple-yellow);
+    color: var(--vga-pure-yellow);
     font-weight: bold;
     font-size: 13px;
+    letter-spacing: 1px;
 }
 
-.comet-banner marquee {
-    background-color: var(--temple-magenta);
-    color: var(--temple-white);
-    font-weight: bold;
-    padding: 2px 0;
-    border-top: 1px solid var(--temple-white);
-    border-bottom: 1px solid var(--temple-white);
+@media (prefers-reduced-motion: reduce) {
+    .reel-track {
+        animation: none;
+        white-space: normal;
+        display: block;
+    }
+    .reel-copy:nth-child(2) {
+        display: none;
+    }
+    .blink-text,
+    .live-dot,
+    .cursor-blink {
+        animation: none;
+    }
 }
 
-/* MAIN LAYOUT CONTAINER */
+/* ============================================================================
+   MAIN FRAME & SIDEBAR
+   ============================================================================ */
+
 .container {
     display: flex;
-    max-width: 820px;
-    margin: 12px auto;
-    border: 4px groove var(--temple-white);
-    background-color: var(--temple-black);
+    max-width: 1140px;
+    margin: 14px auto;
+    border: 4px groove var(--vga-white);
+    background-color: var(--vga-black);
+    box-shadow: 0 0 0 2px var(--vga-blue), 0 0 24px rgba(0, 170, 170, 0.18);
 }
 
-.container.container-wide {
-    max-width: 1120px;
-}
-
-/* SIDEBAR */
 .sidebar {
-    width: 230px;
+    width: 244px;
     flex-shrink: 0;
-    background-color: var(--temple-black);
-    border-right: 4px groove var(--temple-white);
+    background-color: #02020c;
+    border-right: 4px groove var(--vga-white);
     padding: 10px;
 }
 
 .sys-box {
-    border: 2px solid var(--temple-cyan);
-    padding: 6px;
+    border: 2px solid var(--vga-cyan);
+    padding: 7px;
     margin-bottom: 14px;
-    background-color: #000018;
+    background-color: #00001c;
 }
 
 .sys-title {
-    background-color: var(--temple-cyan);
-    color: var(--temple-black);
+    background-color: var(--vga-cyan);
+    color: var(--vga-black);
     font-weight: bold;
-    padding: 2px 4px;
-    letter-spacing: 0.5px;
+    padding: 2px 6px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sidebar ul {
@@ -134,155 +271,56 @@ header h1 {
 }
 
 .sidebar li {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 .sidebar a {
-    color: var(--temple-yellow);
+    color: var(--vga-pure-yellow);
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
-    padding: 1px 2px;
+    display: block;
+    padding: 3px 5px;
+    border: 1px solid transparent;
 }
 
-.sidebar a:hover,
+.sidebar a:hover {
+    background-color: var(--vga-pure-yellow);
+    color: var(--vga-black);
+}
+
 .sidebar a.active-link {
-    background-color: var(--temple-yellow);
-    color: var(--temple-black);
+    background-color: var(--vga-blue);
+    color: var(--vga-white);
+    border: 1px solid var(--vga-bright-cyan);
+}
+
+.sidebar a.active-link::before {
+    content: "> ";
+    color: var(--vga-bright-green);
 }
 
 .portal-box {
-    border: 2px dashed var(--temple-magenta);
+    border: 2px dashed var(--vga-magenta);
     padding: 10px 8px;
     text-align: center;
-    color: var(--temple-white);
+    color: var(--vga-white);
     margin-bottom: 14px;
-    background-color: #140014;
+    background-color: #140018;
 }
 
 .portal-box p {
     margin: 5px 0;
+    font-size: 12px;
 }
 
-.star-graphic {
-    width: 80px;
-    height: 80px;
-    background-color: var(--temple-blue);
-    border: 2px solid var(--temple-yellow);
+.stargate-emblem {
+    width: 96px;
+    height: 96px;
     margin: 6px auto;
     display: block;
-}
-
-/* MAIN CONTENT */
-.main-content {
-    flex: 1;
-    min-width: 0;
-    padding: 12px;
-}
-
-.god-console {
-    background-color: var(--temple-blue);
-    border: 3px double var(--temple-white);
-    color: var(--temple-white);
-    padding: 10px 12px;
-    margin-bottom: 15px;
-}
-
-.god-console h2 {
-    margin: 0 0 8px 0;
-    font-size: 15px;
-    color: var(--temple-yellow);
-    border-bottom: 1px solid var(--temple-yellow);
-    padding-bottom: 3px;
-}
-
-.console-text {
-    font-family: "Courier New", Courier, monospace;
-    color: var(--temple-bright-cyan);
-}
-
-.console-text p {
-    margin: 3px 0;
-}
-
-.text-block {
-    border: 2px solid var(--temple-yellow);
-    padding: 10px 12px;
-    margin-bottom: 15px;
-    background-color: #000044;
-    color: var(--temple-white);
-}
-
-.text-block h2 {
-    margin: 0 0 8px 0;
-    font-size: 16px;
-    color: var(--temple-yellow);
-    border-bottom: 1px dashed var(--temple-cyan);
-    padding-bottom: 4px;
-}
-
-.oracle-block {
-    border: 2px solid var(--temple-green);
-    padding: 10px 12px;
-    margin-bottom: 15px;
-    background-color: #001800;
-}
-
-.oracle-block h2 {
-    margin: 0 0 8px 0;
-    font-size: 15px;
-    color: var(--temple-bright-green);
-}
-
-.oracle-box {
-    background-color: var(--temple-black);
-    color: var(--temple-bright-green);
-    border: 1px solid var(--temple-green);
-    padding: 8px;
-    font-weight: bold;
-}
-
-/* CREDITS PAGE COMPONENTS */
-.vrc-url-box {
-    background-color: var(--temple-black);
-    border: 1px solid var(--temple-cyan);
-    color: var(--temple-bright-green);
-    padding: 5px;
-    font-size: 11px;
-    word-break: break-all;
-    margin: 8px 0;
-    text-align: left;
-}
-
-.dos-btn {
-    display: inline-block;
-    background-color: var(--temple-blue);
-    color: var(--temple-yellow);
-    border: 2px outset var(--temple-white);
-    padding: 4px 8px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    margin: 2px;
-}
-
-.dos-btn:hover,
-.dos-btn.active {
-    background-color: var(--temple-yellow);
-    color: var(--temple-black);
-    border-style: inset;
-}
-
-.dos-btn-green {
-    background-color: var(--temple-green);
-    color: var(--temple-black);
-}
-
-.dos-btn-green:hover {
-    background-color: var(--temple-bright-green);
-    color: var(--temple-black);
+    border: 2px solid var(--vga-pure-yellow);
+    background-color: #000033;
+    padding: 4px;
 }
 
 .stats-table {
@@ -293,20 +331,303 @@ header h1 {
 }
 
 .stats-table td {
-    padding: 2px 3px;
-    border-bottom: 1px dotted var(--temple-dark-gray);
+    padding: 3px 2px;
+    border-bottom: 1px dotted var(--vga-dark-gray);
+    color: var(--vga-gray);
 }
 
 .stats-table td:last-child {
     text-align: right;
-    color: var(--temple-bright-green);
+    color: var(--vga-bright-green);
     font-weight: bold;
 }
 
-/* FILTER BAR */
+.sys-controls {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* ============================================================================
+   MAIN CONTENT & TEMPLE OS WINDOW PANELS
+   ============================================================================ */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    background-color: #000008;
+}
+
+.win-panel {
+    border: 2px solid var(--vga-cyan);
+    background-color: #00002c;
+    margin-bottom: 16px;
+    color: var(--vga-white);
+}
+
+.win-panel.panel-blue {
+    background-color: var(--vga-blue);
+    border: 3px double var(--vga-white);
+}
+
+.win-panel.panel-yellow {
+    border-color: var(--vga-pure-yellow);
+    background-color: #00003a;
+}
+
+.win-panel.panel-green {
+    border-color: var(--vga-green);
+    background-color: #001808;
+}
+
+.win-panel.panel-magenta {
+    border: 3px double var(--vga-bright-magenta);
+    background-color: #160018;
+}
+
+.win-bar {
+    background-color: var(--vga-cyan);
+    color: var(--vga-black);
+    padding: 3px 8px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.panel-blue .win-bar {
+    background-color: var(--vga-white);
+    color: var(--vga-blue);
+}
+
+.panel-yellow .win-bar {
+    background-color: var(--vga-pure-yellow);
+    color: var(--vga-black);
+}
+
+.panel-green .win-bar {
+    background-color: var(--vga-green);
+    color: var(--vga-black);
+}
+
+.panel-magenta .win-bar {
+    background-color: var(--vga-magenta);
+    color: var(--vga-white);
+}
+
+.win-bar-title {
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.win-controls {
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: 0.85;
+    white-space: nowrap;
+}
+
+.win-body {
+    padding: 12px 14px;
+}
+
+.win-body p:first-child {
+    margin-top: 0;
+}
+
+.win-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Console / HolyC block */
+.console-text {
+    font-family: "Courier New", Courier, monospace;
+    color: var(--vga-bright-cyan);
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.console-text .kw { color: var(--vga-pure-yellow); font-weight: bold; }
+.console-text .str { color: var(--vga-bright-green); }
+.console-text .cmt { color: var(--vga-gray); }
+
+.cursor-blink {
+    display: inline-block;
+    width: 9px;
+    height: 14px;
+    background-color: var(--vga-pure-yellow);
+    vertical-align: text-bottom;
+    margin-left: 3px;
+    animation: blinker 0.9s steps(2, start) infinite;
+}
+
+/* ============================================================================
+   BUTTONS, BADGES & INPUTS
+   ============================================================================ */
+
+.dos-btn {
+    display: inline-block;
+    background-color: var(--vga-blue);
+    color: var(--vga-pure-yellow);
+    border: 2px outset var(--vga-white);
+    padding: 5px 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 2px;
+    text-align: center;
+}
+
+.dos-btn:hover,
+.dos-btn.active {
+    background-color: var(--vga-pure-yellow);
+    color: var(--vga-black);
+    border-style: inset;
+}
+
+.dos-btn-green {
+    background-color: var(--vga-green);
+    color: var(--vga-black);
+}
+
+.dos-btn-green:hover {
+    background-color: var(--vga-bright-green);
+    color: var(--vga-black);
+}
+
+.dos-btn-magenta {
+    background-color: var(--vga-magenta);
+    color: var(--vga-white);
+}
+
+.dos-btn-magenta:hover {
+    background-color: var(--vga-bright-magenta);
+    color: var(--vga-black);
+}
+
+.dos-btn-small {
+    padding: 3px 7px;
+    font-size: 11px;
+}
+
+.dos-input {
+    flex: 1;
+    min-width: 180px;
+    background-color: var(--vga-black);
+    color: var(--vga-pure-yellow);
+    border: 2px inset var(--vga-cyan);
+    padding: 6px 8px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+}
+
+.dos-input::placeholder {
+    color: var(--vga-dark-gray);
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--vga-black);
+    border: 1px solid var(--vga-cyan);
+    color: var(--vga-bright-cyan);
+    font-size: 11px;
+    padding: 1px 5px;
+    margin: 2px 3px 0 0;
+    text-transform: uppercase;
+}
+
+.tag-green { border-color: var(--vga-green); color: var(--vga-bright-green); }
+.tag-yellow { border-color: var(--vga-pure-yellow); color: var(--vga-pure-yellow); }
+.tag-magenta { border-color: var(--vga-bright-magenta); color: var(--vga-bright-magenta); }
+
+/* ============================================================================
+   GRIDS & CARDS (HOME PORTALS, SECTORS, AUTHORS, SUPPORTERS, GALLERY)
+   ============================================================================ */
+
+.portal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    gap: 10px;
+}
+
+.portal-card {
+    display: block;
+    background-color: var(--vga-black);
+    border: 2px solid var(--vga-cyan);
+    padding: 10px 11px;
+    text-decoration: none;
+    color: var(--vga-white);
+}
+
+.portal-card:hover {
+    background-color: #000c2a;
+    border-color: var(--vga-pure-yellow);
+    color: var(--vga-white);
+}
+
+.portal-card-title {
+    color: var(--vga-pure-yellow);
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.portal-card:hover .portal-card-title {
+    color: var(--vga-bright-green);
+}
+
+.portal-card-desc {
+    color: var(--vga-gray);
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.sector-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 8px;
+}
+
+.sector-card {
+    background-color: var(--vga-black);
+    border: 1px solid var(--vga-bright-blue);
+    padding: 8px 10px;
+}
+
+.sector-card:hover {
+    border-color: var(--vga-bright-cyan);
+}
+
+.sector-code {
+    color: var(--vga-bright-cyan);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.sector-name {
+    color: var(--vga-pure-yellow);
+    font-weight: bold;
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+.sector-desc {
+    color: var(--vga-gray);
+    font-size: 12px;
+}
+
+/* Filter bar & Credits sections */
 .filter-panel {
-    border: 2px solid var(--temple-cyan);
-    background-color: #001422;
+    border: 2px solid var(--vga-cyan);
+    background-color: #001220;
     padding: 10px;
     margin-bottom: 16px;
 }
@@ -320,28 +641,13 @@ header h1 {
 }
 
 .filter-prompt {
-    color: var(--temple-bright-green);
+    color: var(--vga-bright-green);
     font-weight: bold;
-}
-
-.dos-input {
-    flex: 1;
-    min-width: 180px;
-    background-color: var(--temple-black);
-    color: var(--temple-yellow);
-    border: 2px inset var(--temple-cyan);
-    padding: 5px 8px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 13px;
-}
-
-.dos-input::placeholder {
-    color: var(--temple-dark-gray);
 }
 
 .filter-status {
     font-size: 12px;
-    color: var(--temple-bright-cyan);
+    color: var(--vga-bright-cyan);
     margin-left: auto;
 }
 
@@ -351,37 +657,21 @@ header h1 {
     gap: 4px;
 }
 
-/* CREDITS SECTIONS & TABLES */
 .credits-section {
-    border: 2px solid var(--temple-yellow);
+    border: 2px solid var(--vga-pure-yellow);
     background-color: #000033;
     margin-bottom: 18px;
     padding: 10px 12px;
 }
 
 .credits-section.section-shaders {
-    border-color: var(--temple-cyan);
+    border-color: var(--vga-cyan);
     background-color: #001424;
 }
 
-.credits-section.section-models {
-    border-color: var(--temple-green);
-    background-color: #001608;
-}
-
-.credits-section.section-music {
-    border-color: var(--temple-magenta);
-    background-color: #18001c;
-}
-
 .credits-section.section-fonts {
-    border-color: var(--temple-gray);
-    background-color: #101018;
-}
-
-.credits-section.section-unattributed {
-    border: 3px double var(--temple-bright-magenta);
-    background-color: #1a0014;
+    border-color: var(--vga-gray);
+    background-color: #10101c;
 }
 
 .section-header {
@@ -399,180 +689,40 @@ header h1 {
     margin: 0;
     font-size: 16px;
     letter-spacing: 1px;
-    color: var(--temple-yellow);
+    color: var(--vga-pure-yellow);
 }
 
-.section-shaders .section-header h2 { color: var(--temple-bright-cyan); }
-.section-models .section-header h2 { color: var(--temple-bright-green); }
-.section-music .section-header h2 { color: var(--temple-bright-magenta); }
-.section-fonts .section-header h2 { color: var(--temple-white); }
-.section-unattributed .section-header h2 { color: var(--temple-yellow); }
+.section-shaders .section-header h2 { color: var(--vga-bright-cyan); }
+.section-fonts .section-header h2 { color: var(--vga-white); }
 
 .section-badge {
-    background-color: var(--temple-black);
-    color: var(--temple-white);
-    border: 1px solid var(--temple-white);
+    background-color: var(--vga-black);
+    color: var(--vga-white);
+    border: 1px solid var(--vga-white);
     padding: 1px 6px;
     font-size: 11px;
     font-weight: bold;
 }
 
-.credits-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-}
-
-.credits-table th {
-    text-align: left;
-    background-color: var(--temple-black);
-    color: var(--temple-yellow);
-    border: 1px solid var(--temple-cyan);
-    padding: 5px 7px;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-}
-
-.credits-table td {
-    border: 1px solid #334466;
-    padding: 6px 7px;
-    vertical-align: top;
-    color: var(--temple-white);
-}
-
-.credits-table tr:nth-child(even) td {
-    background-color: rgba(0, 0, 0, 0.35);
-}
-
-.credits-table tr:hover td {
-    background-color: rgba(0, 170, 170, 0.16);
-}
-
-.asset-name {
-    color: var(--temple-yellow);
-    font-weight: bold;
-}
-
-.author-name {
-    color: var(--temple-bright-green);
-    font-weight: bold;
-}
-
-.note-text {
-    color: var(--temple-gray);
-    font-size: 12px;
-    display: block;
-    margin-top: 2px;
-}
-
-.tag {
-    display: inline-block;
-    background-color: var(--temple-black);
-    border: 1px solid var(--temple-cyan);
-    color: var(--temple-bright-cyan);
-    font-size: 10px;
-    padding: 0 4px;
-    margin: 2px 2px 0 0;
-    text-transform: uppercase;
-}
-
-.tag-lic {
-    border-color: var(--temple-green);
-    color: var(--temple-bright-green);
-}
-
-.tag-warn {
-    border-color: var(--temple-yellow);
-    color: var(--temple-yellow);
-}
-
-/* UNATTRIBUTED ANNOTATED BOXES */
-.annotation-banner {
-    background-color: var(--temple-black);
-    border: 1px dashed var(--temple-yellow);
-    color: var(--temple-white);
-    padding: 8px 10px;
-    margin-bottom: 12px;
-    font-size: 13px;
-}
-
-.annotation-banner strong {
-    color: var(--temple-yellow);
-}
-
-.sub-group-title {
-    background-color: var(--temple-magenta);
-    color: var(--temple-white);
-    font-weight: bold;
-    padding: 3px 8px;
-    margin: 12px 0 6px;
-    font-size: 13px;
-    letter-spacing: 0.5px;
-}
-
-.unattr-list {
-    list-style-type: square;
-    margin: 0 0 10px 0;
-    padding-left: 20px;
-    color: var(--temple-white);
-}
-
-.unattr-list li {
-    margin-bottom: 6px;
-}
-
-.credits-table code,
-.unattr-list code {
-    background-color: var(--temple-black);
-    color: var(--temple-bright-cyan);
-    padding: 1px 4px;
-    border: 1px solid #334;
-    font-size: 12px;
-}
-
-.font-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-}
-
-.font-chip {
-    background-color: var(--temple-black);
-    border: 1px solid var(--temple-cyan);
-    padding: 4px 8px;
-    font-size: 12px;
-    color: var(--temple-white);
-}
-
-.font-chip span {
-    color: var(--temple-gray);
-    font-size: 11px;
-}
-
-/* AUTHOR CARD GRID */
 .author-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 8px;
 }
 
-.author-grid-single {
-    grid-template-columns: 1fr;
-}
-
 .author-card {
-    background-color: var(--temple-black);
-    border: 1px solid var(--temple-cyan);
-    padding: 7px 9px;
+    background-color: var(--vga-black);
+    border: 1px solid var(--vga-cyan);
+    padding: 8px 10px;
 }
 
 .author-card:hover {
-    border-color: var(--temple-yellow);
+    border-color: var(--vga-pure-yellow);
     background-color: #000822;
 }
 
 .author-card-name {
-    color: var(--temple-bright-green);
+    color: var(--vga-bright-green);
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 3px;
@@ -582,82 +732,260 @@ header h1 {
     gap: 6px;
 }
 
+.author-card-items {
+    color: var(--vga-white);
+    font-size: 13px;
+    line-height: 1.35;
+}
+
+.author-card-custom {
+    border-color: var(--vga-pure-yellow);
+    background-color: #001028;
+}
+
+.author-card-custom .author-card-name {
+    color: var(--vga-pure-yellow);
+    margin-bottom: 0;
+}
+
 .count-pill {
-    background-color: var(--temple-blue);
-    color: var(--temple-yellow);
-    border: 1px solid var(--temple-cyan);
+    background-color: var(--vga-blue);
+    color: var(--vga-pure-yellow);
+    border: 1px solid var(--vga-cyan);
     font-size: 11px;
     padding: 0 5px;
     flex-shrink: 0;
 }
 
-.author-card-items {
-    color: var(--temple-white);
+.font-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.font-chip {
+    background-color: var(--vga-black);
+    border: 1px solid var(--vga-cyan);
+    padding: 5px 10px;
     font-size: 13px;
-    line-height: 1.35;
+    color: var(--vga-white);
 }
 
-.author-card-unattr {
-    border-color: var(--temple-magenta);
+/* Oracle Terminal */
+.oracle-screen {
+    background-color: var(--vga-black);
+    border: 2px inset var(--vga-green);
+    padding: 14px;
+    min-height: 145px;
+    color: var(--vga-bright-green);
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
-.author-card-unattr .author-card-name {
-    color: var(--temple-yellow);
+.oracle-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed var(--vga-green);
+    font-size: 12px;
 }
 
-.author-card-custom {
-    border-color: var(--temple-yellow);
-    background-color: #001028;
+.oracle-log {
+    background-color: var(--vga-black);
+    border: 1px solid var(--vga-dark-gray);
+    padding: 10px;
+    max-height: 220px;
+    overflow-y: auto;
+    font-size: 12px;
+    color: var(--vga-gray);
 }
 
-.author-card-custom .author-card-name {
-    color: var(--temple-yellow);
-    margin-bottom: 0;
+.oracle-log-entry {
+    padding: 4px 0;
+    border-bottom: 1px dotted #223;
 }
 
+.oracle-log-entry strong {
+    color: var(--vga-bright-cyan);
+}
+
+/* Supporters Wall */
+.supporter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.supporter-card {
+    background-color: var(--vga-black);
+    border: 2px solid var(--vga-pure-yellow);
+    padding: 12px;
+    text-align: center;
+}
+
+.supporter-card:hover {
+    border-color: var(--vga-bright-magenta);
+    background-color: #16001c;
+}
+
+.supporter-star {
+    color: var(--vga-bright-cyan);
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.supporter-name {
+    color: var(--vga-pure-yellow);
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.supporter-role {
+    color: var(--vga-bright-green);
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+/* Manifesto & Spec Lists */
+.retro-list {
+    margin: 6px 0;
+    padding-left: 20px;
+}
+
+.retro-list li {
+    margin-bottom: 6px;
+    color: var(--vga-white);
+}
+
+.retro-list strong {
+    color: var(--vga-pure-yellow);
+}
+
+.callout-box {
+    background-color: var(--vga-black);
+    border: 1px dashed var(--vga-pure-yellow);
+    padding: 10px 12px;
+    color: var(--vga-white);
+    margin: 10px 0;
+}
+
+/* Wallpaper Gallery & Modal */
+.wallpaper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+    gap: 10px;
+}
+
+.wallpaper-card {
+    background-color: var(--vga-black);
+    border: 2px solid var(--vga-cyan);
+    padding: 6px;
+    cursor: pointer;
+    text-align: left;
+    color: var(--vga-white);
+    font-family: inherit;
+}
+
+.wallpaper-card:hover {
+    border-color: var(--vga-pure-yellow);
+    background-color: #000c24;
+}
+
+.wallpaper-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--vga-dark-gray);
+    margin-bottom: 6px;
+    background-color: #080818;
+}
+
+.wallpaper-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--vga-pure-yellow);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wallpaper-sub {
+    font-size: 11px;
+    color: var(--vga-gray);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 12, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+}
+
+.lightbox.open {
+    display: flex;
+}
+
+.lightbox-window {
+    max-width: 920px;
+    width: 100%;
+    background-color: var(--vga-black);
+    border: 3px double var(--vga-white);
+}
+
+.lightbox-img-wrap {
+    padding: 10px;
+    text-align: center;
+    background-color: #02020a;
+}
+
+.lightbox-img-wrap img {
+    max-width: 100%;
+    max-height: 70vh;
+    border: 2px solid var(--vga-cyan);
+    display: inline-block;
+}
+
+.lightbox-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: var(--vga-blue);
+    border-top: 2px solid var(--vga-cyan);
+}
+
+/* Utilities */
 .hidden-row {
     display: none !important;
 }
 
 .no-results {
     display: none;
-    border: 2px solid var(--temple-red);
+    border: 2px solid var(--vga-red);
     background-color: #220000;
-    color: var(--temple-yellow);
+    color: var(--vga-pure-yellow);
     padding: 12px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-/* FOOTER */
-footer {
-    background-color: var(--temple-blue);
-    color: var(--temple-white);
-    text-align: center;
-    padding: 10px;
-    border-top: 4px ridge var(--temple-cyan);
-    margin-top: 12px;
-    font-size: 12px;
-}
-
-footer p {
-    margin: 4px 0;
-}
-
-.counter {
-    background-color: var(--temple-black);
-    color: var(--temple-bright-red);
-    padding: 2px 6px;
-    border: 1px solid var(--temple-white);
-    font-weight: bold;
-}
-
-/* 90S BLINKING TEXT CLASS */
 .blink-text {
-    color: var(--temple-yellow);
+    color: var(--vga-pure-yellow);
     font-weight: bold;
-    animation: blinker 1s linear infinite;
+    animation: blinker 1s steps(2, start) infinite;
 }
 
 @keyframes blinker {
@@ -666,34 +994,58 @@ footer p {
     }
 }
 
-/* RESPONSIVE FALLBACK FOR NARROW SCREENS */
-@media (max-width: 780px) {
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
+
+footer.site-footer {
+    background-color: var(--vga-blue);
+    color: var(--vga-white);
+    text-align: center;
+    padding: 12px 10px;
+    border-top: 4px ridge var(--vga-cyan);
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+footer.site-footer p {
+    margin: 5px 0;
+}
+
+.footer-nav a {
+    margin: 0 5px;
+}
+
+.counter {
+    background-color: var(--vga-black);
+    color: var(--vga-bright-red);
+    padding: 2px 7px;
+    border: 1px solid var(--vga-white);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ============================================================================
+   RESPONSIVE FALLBACK
+   ============================================================================ */
+
+@media (max-width: 820px) {
     .container {
         flex-direction: column;
-        margin: 6px;
+        margin: 8px;
     }
     .sidebar {
         width: 100%;
         border-right: none;
-        border-bottom: 4px groove var(--temple-white);
+        border-bottom: 4px groove var(--vga-white);
     }
-    .credits-table,
-    .credits-table thead,
-    .credits-table tbody,
-    .credits-table tr,
-    .credits-table td {
-        display: block;
-        width: 100%;
+    .sidebar ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 4px;
     }
-    .credits-table thead {
-        display: none;
-    }
-    .credits-table tr {
-        margin-bottom: 10px;
-        border: 1px solid var(--temple-cyan);
-    }
-    .credits-table td {
-        border: none;
-        border-bottom: 1px dotted #334466;
+    header.site-header h1 {
+        font-size: 22px;
+        letter-spacing: 2px;
     }
 }

@@ -3,54 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADRIFT :: CREDITS // THE DIGITAL TEMPLE</title>
+    <title>ADRIFT :: WORLD CREDITS // THE DIGITAL TEMPLE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="crt-on">
 
-    <div id="god-notice">
-        [ADRIFT CREDITS] -- SCENE: PREFABS.UNITY -- STATUS: OK --
+    <!-- TOP BREAKING NEWS-REEL TICKER -->
+    <div class="news-reel-bar" role="region" aria-label="ADRIFT News Reel">
+        <div class="reel-badge"><span class="live-dot"></span>CREDITS</div>
+        <div class="reel-viewport">
+            <div class="reel-track">
+                <span class="reel-copy">
+                    [ADRIFT WORLD CREDITS]<span class="reel-sep">///</span>
+                    CUSTOM ADRIFT SYSTEMS &middot; PAID &amp; FREE SCRIPTS &middot; SHADERS &middot; ASSETS &middot; FONTS<span class="reel-sep">///</span>
+                    ORDERED BY NUMBER OF ASSETS USED<span class="reel-sep">///</span>
+                    THANK YOU TO EVERY CREATOR<span class="reel-sep">///</span>
+                </span>
+                <span class="reel-copy" aria-hidden="true">
+                    [ADRIFT WORLD CREDITS]<span class="reel-sep">///</span>
+                    CUSTOM ADRIFT SYSTEMS &middot; PAID &amp; FREE SCRIPTS &middot; SHADERS &middot; ASSETS &middot; FONTS<span class="reel-sep">///</span>
+                    ORDERED BY NUMBER OF ASSETS USED<span class="reel-sep">///</span>
+                    THANK YOU TO EVERY CREATOR<span class="reel-sep">///</span>
+                </span>
+            </div>
+        </div>
     </div>
 
-    <header>
-        <div class="comet-banner">
-            <marquee behavior="alternate" scrollamount="4">
-                *** ADRIFT CREDITS *** CUSTOM ASSETS :: SHADERS :: UDON SCRIPTS :: FONTS ***
-            </marquee>
+    <header class="site-header">
+        <div class="comet-reel" aria-hidden="true">
+            <div class="reel-track">
+                <span class="reel-copy">
+                    *** THE HOLY CREDITS ***<span class="reel-sep">::</span>
+                    CUSTOM SYSTEMS &middot; SHADERS &middot; UDON SCRIPTS &middot; 3D ASSETS &middot; FONTS<span class="reel-sep">::</span>
+                    BUILT FOR THE ADRIFT VRCHAT WORLD<span class="reel-sep">::</span>
+                </span>
+                <span class="reel-copy">
+                    *** THE HOLY CREDITS ***<span class="reel-sep">::</span>
+                    CUSTOM SYSTEMS &middot; SHADERS &middot; UDON SCRIPTS &middot; 3D ASSETS &middot; FONTS<span class="reel-sep">::</span>
+                    BUILT FOR THE ADRIFT VRCHAT WORLD<span class="reel-sep">::</span>
+                </span>
+            </div>
         </div>
-        <h1>THE HOLY CREDITS</h1>
-        <div class="subtitle">=== ADRIFT_OS v420.69 // ACTIVE SCENE CREDITS ===</div>
+        <div class="header-inner">
+            <h1>THE HOLY CREDITS</h1>
+            <div class="subtitle">=== ADRIFT_OS v420.69 // ACTIVE WORLD CREDITS ===</div>
+        </div>
     </header>
 
-    <div class="container container-wide">
+    <div class="container">
 
-        <!-- LEFT SIDEBAR / NAVIGATION -->
+        <!-- LEFT SIDEBAR -->
         <aside class="sidebar">
-            <div class="sys-box">
-                <div class="sys-title">C:\SYS\MENU.EXE</div>
-                <ul id="sidebar-nav">
+            <nav class="sys-box" aria-label="Main Menu">
+                <div class="sys-title"><span>C:\SYS\MENU.EXE</span><span>[HOTKEYS]</span></div>
+                <ul>
                     <li><a href="index.html">[H] HOME / TEMPLE</a></li>
-                    <li><a href="#custom" class="active-link">[1] CUSTOM ASSETS</a></li>
-                    <li><a href="#authors">[2] PAID/FREE SCRIPTS</a></li>
-                    <li><a href="#fonts">[3] FONTS</a></li>
-                    <li><a href="adrift/credits.txt">[R] RAW .TXT FEED</a></li>
+                    <li><a href="about.html">[A] ABOUT ADRIFT</a></li>
+                    <li><a href="manifesto.html">[M] MANIFESTO &amp; GUIDE</a></li>
+                    <li><a href="oracle.html">[G] HOLY ORACLE</a></li>
+                    <li><a href="credits.html" class="active-link">[C] WORLD CREDITS</a></li>
+                    <li><a href="supporters.html">[P] SUPPORTERS</a></li>
+                    <li><a href="wallpapers.html">[W] WALLPAPERS</a></li>
                 </ul>
-            </div>
+            </nav>
 
             <div class="sys-box">
-                <div class="sys-title">C:\SYS\MANIFEST.STAT</div>
+                <div class="sys-title"><span>C:\SYS\MANIFEST.STAT</span></div>
                 <table class="stats-table" id="stats-table">
-                    <tr><td>SCENE</td><td>Prefabs.unity</td></tr>
+                    <tr><td>CLOCK</td><td id="sys-utc-clock">--:--:-- UTC</td></tr>
                     <tr><td>CUSTOM ASSETS</td><td>4</td></tr>
                     <tr><td>PAID/FREE SCRIPTS</td><td>65</td></tr>
                     <tr><td>FONTS</td><td>3</td></tr>
                 </table>
-            </div>
-
-            <div class="portal-box">
-                <p><strong>STRING FEED</strong></p>
-                <a class="dos-btn dos-btn-green" href="adrift/credits.txt">[OPEN CREDITS.TXT]</a>
-                <p style="font-size: 11px; margin-top: 8px; color: #FFFF00;">STATUS: <span class="blink-text">SYNCED</span></p>
+                <div class="sys-controls">
+                    <button type="button" class="dos-btn dos-btn-small" id="crt-toggle-btn">[CRT SCANLINES: ON]</button>
+                </div>
             </div>
         </aside>
 
@@ -84,16 +111,16 @@
                 </div>
                 <div class="author-grid">
                     <div class="author-card author-card-custom credit-item">
-                        <div class="author-card-name">World Menu</div>
+                        <div class="author-card-name"><span>World Menu</span></div>
                     </div>
                     <div class="author-card author-card-custom credit-item">
-                        <div class="author-card-name">Neural Net AI Dog Agent</div>
+                        <div class="author-card-name"><span>Neural Net AI Dog Agent</span></div>
                     </div>
                     <div class="author-card author-card-custom credit-item">
-                        <div class="author-card-name">MilkDropVRC</div>
+                        <div class="author-card-name"><span>MilkDropVRC</span></div>
                     </div>
                     <div class="author-card author-card-custom credit-item">
-                        <div class="author-card-name">World Area Management System</div>
+                        <div class="author-card-name"><span>World Area Management System</span></div>
                     </div>
                 </div>
             </section>
@@ -104,263 +131,263 @@
                 </div>
                 <div class="author-grid">
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Reimajo <span class="count-pill">8</span></div>
+                        <div class="author-card-name"><span>Reimajo</span> <span class="count-pill">8</span></div>
                         <div class="author-card-items">Space Shuttle, VR Piano, Auto-Calibration Chair, Player Calibration, Player Liftup, Game Text Grid, Buttons &amp; Sliders, Multi-Object Respawn</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">RED_SIM <span class="count-pill">6</span></div>
+                        <div class="author-card-name"><span>RED_SIM</span> <span class="count-pill">6</span></div>
                         <div class="author-card-items">VRC Light Volumes, GPU Particle Volumes, GPU Infinite Grass, Ultimate Players Only Mirror, Perfect Water Shaders, Beautiful Sky</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Pema (pema99) <span class="count-pill">6</span></div>
+                        <div class="author-card-name"><span>Pema (pema99)</span> <span class="count-pill">6</span></div>
                         <div class="author-card-items">BlackHole, BlackHole2, Nebula V2 Skybox, Nebula V4 WalkingNowhere, Powder Toy, ScreenFX</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Mochie <span class="count-pill">5</span></div>
+                        <div class="author-card-name"><span>Mochie</span> <span class="count-pill">5</span></div>
                         <div class="author-card-items">Mochie Standard, Uber, Water (Tessellated), Particles, Screen FX X</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">JetDog <span class="count-pill">4</span></div>
+                        <div class="author-card-name"><span>JetDog</span> <span class="count-pill">4</span></div>
                         <div class="author-card-items">Fly Stick, Simple Toggle, Trigger Teleporter, Collider Key</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Vistanz (@JLChnToZ) &amp; Yama no Buta (@butanoya) <span class="count-pill">3</span></div>
+                        <div class="author-card-name"><span>Vistanz (@JLChnToZ) &amp; Yama no Buta (@butanoya)</span> <span class="count-pill">3</span></div>
                         <div class="author-card-items">VizVid, Lazy Switch, VRCW Foundation</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Silent (s-ilent) <span class="count-pill">3</span></div>
+                        <div class="author-card-name"><span>Silent (s-ilent)</span> <span class="count-pill">3</span></div>
                         <div class="author-card-items">Custom Tonemap, Filamented, Sunshine Flare</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Esnya <span class="count-pill">3</span></div>
+                        <div class="author-card-name"><span>Esnya</span> <span class="count-pill">3</span></div>
                         <div class="author-card-items">Altimeter, GyroscopicIndicator, RoundIndicator</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Doppelganger <span class="count-pill">3</span></div>
+                        <div class="author-card-name"><span>Doppelganger</span> <span class="count-pill">3</span></div>
                         <div class="author-card-items">Fracture 2.0.0, Optical Stream, Fractal Pyramid</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Kit <span class="count-pill">3</span></div>
+                        <div class="author-card-name"><span>Kit</span> <span class="count-pill">3</span></div>
                         <div class="author-card-items">Gaming Bloom, Mushroom Trip V2, Gaming Trip</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">lox9973 <span class="count-pill">2</span></div>
+                        <div class="author-card-name"><span>lox9973</span> <span class="count-pill">2</span></div>
                         <div class="author-card-items">ShaderGPT, UdonTTS</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Poiyomi <span class="count-pill">2</span></div>
+                        <div class="author-card-name"><span>Poiyomi</span> <span class="count-pill">2</span></div>
                         <div class="author-card-items">Poiyomi Pro, Poiyomi Toon</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">ArchiTechVR <span class="count-pill">2</span></div>
+                        <div class="author-card-name"><span>ArchiTechVR</span> <span class="count-pill">2</span></div>
                         <div class="author-card-items">ProTV, ProTV Extras</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Hirabiki <span class="count-pill">2</span></div>
+                        <div class="author-card-name"><span>Hirabiki</span> <span class="count-pill">2</span></div>
                         <div class="author-card-items">SwimSystem, Udon Works</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">CNLohr <span class="count-pill">2</span></div>
+                        <div class="author-card-name"><span>CNLohr</span> <span class="count-pill">2</span></div>
                         <div class="author-card-items">CN Ballpit, BrokeredSync</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">RedMage <span class="count-pill">2</span></div>
+                        <div class="author-card-name"><span>RedMage</span> <span class="count-pill">2</span></div>
                         <div class="author-card-items">Cancerspace, Cancerfree</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Quaternius <span class="count-pill">2</span></div>
+                        <div class="author-card-name"><span>Quaternius</span> <span class="count-pill">2</span></div>
                         <div class="author-card-items">LowPoly Trees, Stylized Nature MegaKit</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">SuzuFactory <span class="count-pill">2</span></div>
+                        <div class="author-card-name"><span>SuzuFactory</span> <span class="count-pill">2</span></div>
                         <div class="author-card-items">Kaleidoscope, Marble Maze</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Sat Productions <span class="count-pill">2</span></div>
+                        <div class="author-card-name"><span>Sat Productions</span> <span class="count-pill">2</span></div>
                         <div class="author-card-items">Street Lights, VRChat3DSun</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Leviant <span class="count-pill">2</span></div>
+                        <div class="author-card-name"><span>Leviant</span> <span class="count-pill">2</span></div>
                         <div class="author-card-items">Tesseract, ScreenSpace Ubershader</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">mikeee324</div>
+                        <div class="author-card-name"><span>mikeee324</span></div>
                         <div class="author-card-items">OpenPutt</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Neko Mabel &amp; Sacchan</div>
+                        <div class="author-card-name"><span>Neko Mabel &amp; Sacchan</span></div>
                         <div class="author-card-items">MS-VRCSA Billiards</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">SpookyGhostBoo &amp; FortisVenaliter</div>
+                        <div class="author-card-name"><span>SpookyGhostBoo &amp; FortisVenaliter</span></div>
                         <div class="author-card-items">E-Lanes Bowling Alley</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">AcChosen</div>
+                        <div class="author-card-name"><span>AcChosen</span></div>
                         <div class="author-card-items">VR Stage Lighting (VRSL)</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">letsmakecoolart</div>
+                        <div class="author-card-name"><span>letsmakecoolart</span></div>
                         <div class="author-card-items">Alien Grass Pack</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Janooba</div>
+                        <div class="author-card-name"><span>Janooba</span></div>
                         <div class="author-card-items">Immersive Interactions</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Procedural Worlds</div>
+                        <div class="author-card-name"><span>Procedural Worlds</span></div>
                         <div class="author-card-items">Real Ivy</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Sacchan (Sacchan-VRC)</div>
+                        <div class="author-card-name"><span>Sacchan (Sacchan-VRC)</span></div>
                         <div class="author-card-items">SaccFlightAndVehicles</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">omochi</div>
+                        <div class="author-card-name"><span>omochi</span></div>
                         <div class="author-card-items">Dynamic MochiMochi</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">3Dexter</div>
+                        <div class="author-card-name"><span>3Dexter</span></div>
                         <div class="author-card-items">Looming Landmarks</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">z3y</div>
+                        <div class="author-card-name"><span>z3y</span></div>
                         <div class="author-card-items">VRCMarker Pro</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Markcreator</div>
+                        <div class="author-card-name"><span>Markcreator</span></div>
                         <div class="author-card-items">Impressive Buttons</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">BobyStar</div>
+                        <div class="author-card-name"><span>BobyStar</span></div>
                         <div class="author-card-items">Boby&#x27;s Planet Movement</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">aurycat</div>
+                        <div class="author-card-name"><span>aurycat</span></div>
                         <div class="author-card-items">UdonPortals</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Gabriel Aguiar Productions</div>
+                        <div class="author-card-name"><span>Gabriel Aguiar Productions</span></div>
                         <div class="author-card-items">Free Quick Effects Vol. 1</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Kisu</div>
+                        <div class="author-card-name"><span>Kisu</span></div>
                         <div class="author-card-items">Kisu&#x27;s Petbed</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Noriben</div>
+                        <div class="author-card-name"><span>Noriben</span></div>
                         <div class="author-card-items">Noriben LED Panel Shader</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Leah Elizabeth (llealloo)</div>
+                        <div class="author-card-name"><span>Leah Elizabeth (llealloo)</span></div>
                         <div class="author-card-items">AudioLink</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">GGBot</div>
+                        <div class="author-card-name"><span>GGBot</span></div>
                         <div class="author-card-items">PSX Style Cars</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">PlayerBush001</div>
+                        <div class="author-card-name"><span>PlayerBush001</span></div>
                         <div class="author-card-items">Colour Transparent Fade</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Clawbird</div>
+                        <div class="author-card-name"><span>Clawbird</span></div>
                         <div class="author-card-items">Generators Shader</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">RiversideTrap</div>
+                        <div class="author-card-name"><span>RiversideTrap</span></div>
                         <div class="author-card-items">AudioLink Spectrum Shader</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Texelsaur</div>
+                        <div class="author-card-name"><span>Texelsaur</span></div>
                         <div class="author-card-items">VideoTXL</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Feyris77</div>
+                        <div class="author-card-name"><span>Feyris77</span></div>
                         <div class="author-card-items">Galaxy Shader</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Pablo Roman Andrioli &amp; Jonathan Cohen</div>
+                        <div class="author-card-name"><span>Pablo Roman Andrioli &amp; Jonathan Cohen</span></div>
                         <div class="author-card-items">Star Nest Skybox</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Rollthered</div>
+                        <div class="author-card-name"><span>Rollthered</span></div>
                         <div class="author-card-items">Rollthered Fire Shader</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Shapes</div>
+                        <div class="author-card-name"><span>Shapes</span></div>
                         <div class="author-card-items">Nature Starter Kit 2</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Superbstingray</div>
+                        <div class="author-card-name"><span>Superbstingray</span></div>
                         <div class="author-card-items">UdonPlayerPlatformHook</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Daniel Baumgartner (Quantum)</div>
+                        <div class="author-card-name"><span>Daniel Baumgartner (Quantum)</span></div>
                         <div class="author-card-items">Quantum Particles</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">GamerSquid</div>
+                        <div class="author-card-name"><span>GamerSquid</span></div>
                         <div class="author-card-items">Cherry Wood Material</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Temporal</div>
+                        <div class="author-card-name"><span>Temporal</span></div>
                         <div class="author-card-items">VRCPlayersOnlyMirror</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Alex Griffith (gravyvr)</div>
+                        <div class="author-card-name"><span>Alex Griffith (gravyvr)</span></div>
                         <div class="author-card-items">PSXVR Shaders</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">BigSoundBank</div>
+                        <div class="author-card-name"><span>BigSoundBank</span></div>
                         <div class="author-card-items">Metronome 120 BPM SFX</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Craig Snedeker</div>
+                        <div class="author-card-name"><span>Craig Snedeker</span></div>
                         <div class="author-card-items">Classic64 Asset Library</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Inigo Quilez</div>
+                        <div class="author-card-name"><span>Inigo Quilez</span></div>
                         <div class="author-card-items">Rainforest Shader</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Kay Lousberg</div>
+                        <div class="author-card-name"><span>Kay Lousberg</span></div>
                         <div class="author-card-items">KayKit Platformer Pack</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Kenney</div>
+                        <div class="author-card-name"><span>Kenney</span></div>
                         <div class="author-card-items">Minigolf Kit</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Misha</div>
+                        <div class="author-card-name"><span>Misha</span></div>
                         <div class="author-card-items">Schwarzschild Black Hole</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">myochii</div>
+                        <div class="author-card-name"><span>myochii</span></div>
                         <div class="author-card-items">Mushroom 3D Model</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Paci</div>
+                        <div class="author-card-name"><span>Paci</span></div>
                         <div class="author-card-items">Udon Wordle</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Polygonal Mind</div>
+                        <div class="author-card-name"><span>Polygonal Mind</span></div>
                         <div class="author-card-items">LowPoly Office</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Stix Games</div>
+                        <div class="author-card-name"><span>Stix Games</span></div>
                         <div class="author-card-items">DirectX 11 Grass Shader</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">ureishi</div>
+                        <div class="author-card-name"><span>ureishi</span></div>
                         <div class="author-card-items">YTTL (Video Title Viewer)</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">VirtualFox Design Studio</div>
+                        <div class="author-card-name"><span>VirtualFox Design Studio</span></div>
                         <div class="author-card-items">CircleMask</div>
                     </div>
                     <div class="author-card credit-item">
-                        <div class="author-card-name">Warren</div>
+                        <div class="author-card-name"><span>Warren</span></div>
                         <div class="author-card-items">Warren&#x27;s Fast Fur Shader (V5)</div>
                     </div>
                 </div>
@@ -381,14 +408,21 @@
         </main>
     </div>
 
-    <footer>
-        <p><span class="blink-text">*** ADRIFT_OS // CREDITS MANIFEST ***</span></p>
-        <p>
-            <a href="index.html">[HOME]</a> &middot;
-            <a href="adrift/credits.txt">[RAW CREDITS.TXT]</a>
+    <footer class="site-footer">
+        <p><span class="blink-text">*** ADRIFT_OS // CREDITS NODE ***</span></p>
+        <p class="footer-nav">
+            <a href="index.html">[HOME]</a>
+            <a href="about.html">[ABOUT]</a>
+            <a href="manifesto.html">[MANIFESTO]</a>
+            <a href="oracle.html">[ORACLE]</a>
+            <a href="credits.html">[CREDITS]</a>
+            <a href="supporters.html">[SUPPORTERS]</a>
+            <a href="wallpapers.html">[WALLPAPERS]</a>
         </p>
+        <p>NODE ID: <span class="counter">00042069</span></p>
     </footer>
 
+    <script src="site.js"></script>
     <script>
         (function () {
             var searchInput = document.getElementById("credit-search");
@@ -396,7 +430,6 @@
             var noResultsEl = document.getElementById("no-results");
             var tabsEl = document.getElementById("filter-tabs");
             var rootEl = document.getElementById("credits-root");
-            var navEl = document.getElementById("sidebar-nav");
             var statsEl = document.getElementById("stats-table");
             var activeCat = "all";
 
@@ -480,19 +513,12 @@
             function renderFromSections(sections) {
                 if (!sections || !sections.length) return;
                 rootEl.textContent = "";
-                navEl.textContent = "";
-                statsEl.textContent = "";
                 tabsEl.textContent = "";
 
-                function addNav(href, label, isActive) {
-                    var li = document.createElement("li");
-                    var a = document.createElement("a");
-                    a.href = href;
-                    a.textContent = label;
-                    if (isActive) a.className = "active-link";
-                    li.appendChild(a);
-                    navEl.appendChild(li);
-                }
+                // Keep clock row in stats table, replace section stat rows
+                var clockRow = statsEl.querySelector("tr");
+                statsEl.textContent = "";
+                if (clockRow) statsEl.appendChild(clockRow);
 
                 function addStat(k, v) {
                     var tr = document.createElement("tr");
@@ -514,8 +540,6 @@
                     tabsEl.appendChild(btn);
                 }
 
-                addNav("index.html", "[H] HOME / TEMPLE", false);
-                addStat("SCENE", "Prefabs.unity");
                 addTab("all", "[ALL]", true);
 
                 sections.forEach(function (sec, idx0) {
@@ -542,12 +566,8 @@
                         secId = "authors";
                         shortLbl = "PAID/FREE SCRIPTS";
                         badge = sec.blocks.length + " CREATORS";
-                    } else if (low.indexOf("unattributed") !== -1) {
-                        secId = "unattributed";
-                        secCls = "credits-section section-unattributed";
                     }
 
-                    addNav("#" + secId, "[" + idx + "] " + shortLbl, idx === 1);
                     addStat(shortLbl, sec.blocks.length);
                     addTab(secId, "[" + idx + "] " + shortLbl, false);
 
@@ -613,7 +633,6 @@
                     rootEl.appendChild(secEl);
                 });
 
-                addNav("adrift/credits.txt", "[R] RAW .TXT FEED", false);
                 activeCat = "all";
                 bindTabs();
                 applyFilter();
@@ -623,14 +642,14 @@
             bindTabs();
             applyFilter();
 
-            // Live-sync with adrift/credits.txt when served over HTTP(S) (e.g., GitHub Pages)
+            // Quietly live-sync with adrift/credits.txt on GitHub Pages
             if (window.fetch && window.location.protocol !== "file:") {
                 fetch("adrift/credits.txt", { cache: "no-cache" })
                     .then(function (res) { return res.ok ? res.text() : null; })
                     .then(function (txt) {
                         if (txt) renderFromSections(parseCreditsTxt(txt));
                     })
-                    .catch(function () { /* keep static fallback */ });
+                    .catch(function () {});
             }
         })();
     </script>

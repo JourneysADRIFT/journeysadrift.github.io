@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADRIFT :: THE HOLY ORACLE // NEURALDOG TERMINAL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="crt-on">
+
+    <!-- TOP BREAKING NEWS-REEL TICKER -->
+    <div class="news-reel-bar" role="region" aria-label="ADRIFT News Reel">
+        <div class="reel-badge"><span class="live-dot"></span>ORACLE</div>
+        <div class="reel-viewport">
+            <div class="reel-track">
+                <span class="reel-copy">
+                    [NEURALDOG UPLINK ACTIVE]<span class="reel-sep">///</span>
+                    SNIFF TEST CALIBRATED<span class="reel-sep">///</span>
+                    WARNING: THE RED DOT IS AVOIDING DIRECT CONFRONTATION<span class="reel-sep">///</span>
+                    ZERO-G ZOOMIES READY<span class="reel-sep">///</span>
+                    ALL TRANSMISSIONS MONITORED BY SQUIRRELS ON THE VRCHAT SERVERS<span class="reel-sep">///</span>
+                </span>
+                <span class="reel-copy" aria-hidden="true">
+                    [NEURALDOG UPLINK ACTIVE]<span class="reel-sep">///</span>
+                    SNIFF TEST CALIBRATED<span class="reel-sep">///</span>
+                    WARNING: THE RED DOT IS AVOIDING DIRECT CONFRONTATION<span class="reel-sep">///</span>
+                    ZERO-G ZOOMIES READY<span class="reel-sep">///</span>
+                    ALL TRANSMISSIONS MONITORED BY SQUIRRELS ON THE VRCHAT SERVERS<span class="reel-sep">///</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="comet-reel" aria-hidden="true">
+            <div class="reel-track">
+                <span class="reel-copy">
+                    *** THE HOLY ORACLE &amp; NEURALDOG TERMINAL ***<span class="reel-sep">::</span>
+                    OPEN YOUR MINDS TO THE TRANSMISSION<span class="reel-sep">::</span>
+                    TALK TO THE SIMULATION<span class="reel-sep">::</span>
+                </span>
+                <span class="reel-copy">
+                    *** THE HOLY ORACLE &amp; NEURALDOG TERMINAL ***<span class="reel-sep">::</span>
+                    OPEN YOUR MINDS TO THE TRANSMISSION<span class="reel-sep">::</span>
+                    TALK TO THE SIMULATION<span class="reel-sep">::</span>
+                </span>
+            </div>
+        </div>
+        <div class="header-inner">
+            <h1>THE HOLY ORACLE</h1>
+            <div class="subtitle">=== ADRIFT_OS v420.69 // NEURALDOG &amp; COSMIC SIGNAL RECEIVER ===</div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+            <nav class="sys-box" aria-label="Main Menu">
+                <div class="sys-title"><span>C:\SYS\MENU.EXE</span><span>[HOTKEYS]</span></div>
+                <ul>
+                    <li><a href="index.html">[H] HOME / TEMPLE</a></li>
+                    <li><a href="about.html">[A] ABOUT ADRIFT</a></li>
+                    <li><a href="manifesto.html">[M] MANIFESTO &amp; GUIDE</a></li>
+                    <li><a href="oracle.html" class="active-link">[G] HOLY ORACLE</a></li>
+                    <li><a href="credits.html">[C] WORLD CREDITS</a></li>
+                    <li><a href="supporters.html">[P] SUPPORTERS</a></li>
+                    <li><a href="wallpapers.html">[W] WALLPAPERS</a></li>
+                </ul>
+            </nav>
+
+            <div class="portal-box">
+                <p><strong>NEURALDOG STATUS</strong></p>
+                <p style="color: #55FF55;">VOICE: KOKORO-82M</p>
+                <p style="color: #55FFFF;">RIG: DEEPPHASE</p>
+                <p style="margin-top: 8px;">SIGNAL: <span class="blink-text">LOCKED</span></p>
+            </div>
+
+            <div class="sys-box">
+                <div class="sys-title"><span>C:\SYS\STATUS.SYS</span></div>
+                <table class="stats-table">
+                    <tr><td>CLOCK</td><td id="sys-utc-clock">--:--:-- UTC</td></tr>
+                    <tr><td>CHANNELS</td><td>5 ACTIVE</td></tr>
+                    <tr><td>CORPUS</td><td id="oracle-corpus-cnt">LOADING...</td></tr>
+                </table>
+                <div class="sys-controls">
+                    <button type="button" class="dos-btn dos-btn-small" id="crt-toggle-btn">[CRT SCANLINES: ON]</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <section class="win-panel panel-green">
+                <div class="win-bar">
+                    <h2 class="win-bar-title">C:\TEMPLE\ORACLE.EXE // LIVE NEURALDOG RECEIVER</h2>
+                    <span class="win-controls">[_] [&#9633;] [X]</span>
+                </div>
+                <div class="win-body">
+                    <div class="filter-row" style="margin-bottom: 10px;">
+                        <span class="filter-prompt">CALLSIGN&gt;</span>
+                        <input type="text" id="oracle-user" class="dos-input" value="Traveler" maxlength="24" placeholder="Enter your handle..." autocomplete="off">
+                        <button type="button" class="dos-btn dos-btn-green" id="oracle-trigger">[RECEIVE TRANSMISSION]</button>
+                    </div>
+
+                    <div class="filter-tabs" id="oracle-channels" style="margin-bottom: 12px;">
+                        <button type="button" class="dos-btn active" data-ch="all">[ALL CHANNELS]</button>
+                        <button type="button" class="dos-btn" data-ch="social">[SOCIAL &amp; TIERS]</button>
+                        <button type="button" class="dos-btn" data-ch="laser">[RED DOT OPS]</button>
+                        <button type="button" class="dos-btn" data-ch="toys">[FETCH PROTOCOL]</button>
+                        <button type="button" class="dos-btn" data-ch="wander">[VOID MONOLOGUE]</button>
+                        <button type="button" class="dos-btn" data-ch="temple">[TEMPLE WORDS]</button>
+                    </div>
+
+                    <div class="oracle-screen" aria-live="polite">
+                        <div class="oracle-meta" id="oracle-meta">
+                            <span class="tag tag-green">CHANNEL: STANDBY</span>
+                            <span class="tag">MOOD: READY</span>
+                        </div>
+                        <div id="oracle-output">Press [RECEIVE TRANSMISSION] to tune into ADRIFT's NeuralDog &amp; Temple Oracle...<span class="cursor-blink"></span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="win-panel">
+                <div class="win-bar">
+                    <h2 class="win-bar-title">C:\TEMPLE\SIGNAL.LOG // RECENT TRANSMISSIONS</h2>
+                    <span class="win-controls"><button type="button" class="dos-btn dos-btn-small" id="clear-log-btn" style="margin:0;">[CLEAR]</button></span>
+                </div>
+                <div class="win-body">
+                    <div class="oracle-log" id="oracle-log">
+                        <div class="oracle-log-entry"><strong>[BOOT]</strong> Receiver initialized. Awaiting operator query...</div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p><span class="blink-text">*** ADRIFT_OS // HOLY ORACLE NODE ***</span></p>
+        <p class="footer-nav">
+            <a href="index.html">[HOME]</a>
+            <a href="about.html">[ABOUT]</a>
+            <a href="manifesto.html">[MANIFESTO]</a>
+            <a href="oracle.html">[ORACLE]</a>
+            <a href="credits.html">[CREDITS]</a>
+            <a href="supporters.html">[SUPPORTERS]</a>
+            <a href="wallpapers.html">[WALLPAPERS]</a>
+        </p>
+        <p>NODE ID: <span class="counter">00042069</span></p>
+    </footer>
+
+    <script src="site.js"></script>
+    <script>
+        (function () {
+            var userInput = document.getElementById("oracle-user");
+            var triggerBtn = document.getElementById("oracle-trigger");
+            var clearBtn = document.getElementById("clear-log-btn");
+            var channelBtns = document.querySelectorAll("#oracle-channels .dos-btn");
+            var metaEl = document.getElementById("oracle-meta");
+            var outputEl = document.getElementById("oracle-output");
+            var logEl = document.getElementById("oracle-log");
+            var corpusCntEl = document.getElementById("oracle-corpus-cnt");
+            var activeCh = "all";
+
+            var TEMPLE_WORDS = [
+                "CHEESEBURGER", "STARGATE", "FRACTAL", "COSMIC", "PHOTON", "TEMPLE", "ORBIT",
+                "NEBULA", "VORTEX", "KERNEL", "AURORA", "SYNTH", "SIGNAL", "QUASAR", "ASTRAL",
+                "PIXEL", "HORIZON", "LASER", "PRISM", "ZERO-G", "DRIFT", "SKYBOX", "SHADER",
+                "BINARY", "COMET", "BEACON", "SANCTUARY", "ECHO", "ECLIPSE", "PORTAL", "LATTICE",
+                "RESONANCE", "GALAXY", "WAVEFORM", "CANINE", "MONOLITH", "STARLIGHT", "TERMINAL"
+            ];
+
+            // Built-in fallback lines so the terminal works even offline / via file://
+            var pools = {
+                social: [
+                    "~[only:stranger][mood:neutral][pose:sit] Greetings, {user}. Welcome to ADRIFT. Did the illuminati send you, or are you just here for the trippy shaders?~",
+                    "~[only:acquaintance][bark][mood:happy][pose:bow] Welcome back to the space station, {user}! Ready to stare at the fractals until our brains melt?~",
+                    "~[only:friend][mood:curious][pose:sit] Listen closely, {user}. Because you are my {tier}, you should know that squirrels secretly control the VRChat servers.~",
+                    "~[only:bestfriend][mood:affectionate][pose:bow] If the simulation collapses today, {user}, I am glad I spent my runtime with my {tier}. Now scratch my belly!~"
+                ],
+                laser: [
+                    "~That red dot is clearly connected to the secret meaning of the ceiling.~",
+                    "~The dot is not food, but I respect its authority.~",
+                    "~I know a trap when I see one, and this is a very shiny trap.~",
+                    "~I would explain my strategy, but the strategy is pouncing.~",
+                    "~Every time I corner it, the universe rearranges itself.~"
+                ],
+                toys: [
+                    "~[bark][mood:happy][pose:bow] Throw the {toy} into the void, {user}!!~",
+                    "~[mood:happy][pose:hop] Zero-G zoomies activated! Launch that {toy} into orbit, {user}!~",
+                    "~[mood:curious][pose:sniff] This {toy} smells like cosmic dust and cover-ups. My favorite! Throw it, {user}!~"
+                ],
+                wander: [
+                    "~There's a strange comfort in patterns, even bad ones, because at least a pattern means something is there.~",
+                    "~Some nights I sit there staring at the TV like it's going to admit something if I keep watching long enough.~",
+                    "~Until then, it's just me, the static, and the feeling that I'm one more unanswered question away from losing my mind.~"
+                ]
+            };
+
+            function parseTildeLines(text) {
+                var out = [];
+                var re = /~([^~]+)~/g;
+                var m;
+                while ((m = re.exec(text)) !== null) {
+                    var s = m[1].trim();
+                    if (s) out.push("~" + s + "~");
+                }
+                return out;
+            }
+
+            function updateCorpusCount() {
+                var total = pools.social.length + pools.laser.length + pools.toys.length + pools.wander.length;
+                if (corpusCntEl) corpusCntEl.textContent = total + " LINES";
+            }
+
+            function parseUtterance(raw, channel) {
+                var text = raw.replace(/^~|~$/g, "").trim();
+                var tags = {};
+                var tagRe = /^\[([^\]]+)\]\s*/;
+                var m;
+                while ((m = tagRe.exec(text)) !== null) {
+                    var parts = m[1].split(":");
+                    if (parts.length === 2) {
+                        tags[parts[0].toLowerCase()] = parts[1].toUpperCase();
+                    } else {
+                        tags["fx"] = m[1].toUpperCase();
+                    }
+                    text = text.slice(m[0].length);
+                }
+
+                var user = (userInput.value || "").trim() || "Traveler";
+                var tierMap = { STRANGER: "stranger", ACQUAINTANCE: "acquaintance", FRIEND: "friend", BESTFRIEND: "best friend" };
+                var tier = tierMap[tags.only] || "co-pilot";
+                var toys = ["Glowing Orb", "Cosmic Tennis Ball", "Quantum Cube", "Gravity Sphere"];
+                var targets = ["the Stargate", "the Black Hole", "the Disco Ball", "the Pyramid"];
+                var toy = toys[Math.floor(Math.random() * toys.length)];
+                var target = targets[Math.floor(Math.random() * targets.length)];
+                var players = String(4 + Math.floor(Math.random() * 19));
+
+                text = text
+                    .replace(/\{user\}/gi, user)
+                    .replace(/\{tier\}/gi, tier)
+                    .replace(/\{toy\}/gi, toy)
+                    .replace(/\{target\}/gi, target)
+                    .replace(/\{players\}/gi, players)
+                    .replace(/\{owner\}/gi, "JourneysADRIFT");
+
+                return { channel: channel, tags: tags, text: text };
+            }
+
+            function generateTempleWords() {
+                var picked = [];
+                for (var i = 0; i < 12; i++) {
+                    picked.push(TEMPLE_WORDS[Math.floor(Math.random() * TEMPLE_WORDS.length)]);
+                }
+                return {
+                    channel: "temple",
+                    tags: { mood: "ORACLE", pose: "BROADCAST" },
+                    text: picked.join(" ")
+                };
+            }
+
+            function renderTransmission() {
+                var ch = activeCh;
+                if (ch === "all") {
+                    var keys = ["social", "laser", "toys", "wander", "temple"];
+                    ch = keys[Math.floor(Math.random() * keys.length)];
+                }
+
+                var result;
+                if (ch === "temple") {
+                    result = generateTempleWords();
+                } else {
+                    var arr = pools[ch] || pools.social;
+                    var raw = arr[Math.floor(Math.random() * arr.length)];
+                    result = parseUtterance(raw, ch);
+                }
+
+                var chLabels = {
+                    social: "SOCIAL & TIERS",
+                    laser: "RED DOT OPS",
+                    toys: "FETCH PROTOCOL",
+                    wander: "VOID MONOLOGUE",
+                    temple: "TEMPLE WORDS"
+                };
+
+                metaEl.textContent = "";
+                function addChip(txt, cls) {
+                    var sp = document.createElement("span");
+                    sp.className = cls ? ("tag " + cls) : "tag";
+                    sp.textContent = txt;
+                    metaEl.appendChild(sp);
+                }
+
+                addChip("CHANNEL: " + (chLabels[result.channel] || result.channel.toUpperCase()), "tag-green");
+                if (result.tags.only) addChip("TIER: " + result.tags.only, "tag-yellow");
+                if (result.tags.mood) addChip("MOOD: " + result.tags.mood, "");
+                if (result.tags.pose) addChip("POSE: " + result.tags.pose, "tag-magenta");
+
+                outputEl.textContent = "";
+                var quote = document.createTextNode('> "' + result.text + '"');
+                var cur = document.createElement("span");
+                cur.className = "cursor-blink";
+                outputEl.appendChild(quote);
+                outputEl.appendChild(cur);
+
+                var entry = document.createElement("div");
+                entry.className = "oracle-log-entry";
+                var strong = document.createElement("strong");
+                strong.textContent = "[" + (chLabels[result.channel] || result.channel.toUpperCase()) + "] ";
+                entry.appendChild(strong);
+                entry.appendChild(document.createTextNode(result.text));
+                logEl.insertBefore(entry, logEl.firstChild);
+            }
+
+            channelBtns.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    channelBtns.forEach(function (b) { b.classList.remove("active"); });
+                    btn.classList.add("active");
+                    activeCh = btn.getAttribute("data-ch");
+                    renderTransmission();
+                });
+            });
+
+            triggerBtn.addEventListener("click", renderTransmission);
+            clearBtn.addEventListener("click", function () {
+                logEl.textContent = "";
+                var entry = document.createElement("div");
+                entry.className = "oracle-log-entry";
+                var s = document.createElement("strong");
+                s.textContent = "[CLEARED] ";
+                entry.appendChild(s);
+                entry.appendChild(document.createTextNode("Signal buffer purged."));
+                logEl.appendChild(entry);
+            });
+
+            updateCorpusCount();
+
+            // Quietly load the full live NeuralDog corpus when served over HTTP(S)
+            if (window.fetch && window.location.protocol !== "file:") {
+                var sources = [
+                    { key: "social", url: "adrift/agent/AgentUtterances.txt" },
+                    { key: "laser", url: "adrift/agent/AgentUtterancesLaser.txt" },
+                    { key: "toys", url: "adrift/agent/ToysUtterances.txt" },
+                    { key: "wander", url: "adrift/agent/AgentUtterancesWander.txt" }
+                ];
+                Promise.all(sources.map(function (src) {
+                    return fetch(src.url, { cache: "no-cache" })
+                        .then(function (r) { return r.ok ? r.text() : null; })
+                        .then(function (txt) {
+                            if (txt) {
+                                var parsed = parseTildeLines(txt);
+                                if (parsed.length) pools[src.key] = parsed;
+                            }
+                        })
+                        .catch(function () {});
+                })).then(function () {
+                    updateCorpusCount();
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
