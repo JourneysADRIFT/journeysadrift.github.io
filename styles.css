@@ -117,16 +117,27 @@ a:hover {
 
 .reel-viewport {
     flex: 1;
+    min-width: 0;
     overflow: hidden;
     white-space: nowrap;
     padding: 6px 0;
 }
 
 .reel-track {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     width: max-content;
+    white-space: nowrap;
     will-change: transform;
-    animation: news-reel-scroll 38s linear infinite;
+    animation: news-reel-scroll var(--reel-duration, 26s) linear infinite;
+}
+
+.reel-group {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .news-reel-bar:hover .reel-track,
@@ -136,7 +147,9 @@ a:hover {
 
 .reel-copy {
     display: inline-block;
-    padding-right: 48px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding-right: 0;
     letter-spacing: 0.6px;
 }
 
@@ -171,17 +184,20 @@ header.site-header {
 }
 
 .comet-reel {
+    display: flex;
+    align-items: center;
     background-color: var(--vga-magenta);
     color: var(--vga-white);
     border-bottom: 2px solid var(--vga-white);
     overflow: hidden;
+    white-space: nowrap;
     font-weight: bold;
     font-size: 12px;
-    padding: 4px 0;
+    padding: 5px 0;
 }
 
 .comet-reel .reel-track {
-    animation-duration: 30s;
+    animation-duration: var(--reel-duration, 22s);
 }
 
 .comet-reel .reel-sep {
@@ -206,22 +222,6 @@ header.site-header h1 {
     font-weight: bold;
     font-size: 13px;
     letter-spacing: 1px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .reel-track {
-        animation: none;
-        white-space: normal;
-        display: block;
-    }
-    .reel-copy:nth-child(2) {
-        display: none;
-    }
-    .blink-text,
-    .live-dot,
-    .cursor-blink {
-        animation: none;
-    }
 }
 
 /* ============================================================================
