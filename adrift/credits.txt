@@ -1,0 +1,224 @@
+========================================
+            ADRIFT :: CREDITS
+========================================
+
+========================================
+Custom ADRIFT assets
+========================================
+
+World Menu
+
+Neural Net AI Dog Agent
+
+MilkDropVRC
+
+World Area Management System
+
+========================================
+Paid/Free scripts used
+========================================
+
+Reimajo
+Space Shuttle, VR Piano, Auto-Calibration Chair, Player Calibration, Player Liftup, Game Text Grid, Buttons & Sliders, Multi-Object Respawn
+
+RED_SIM
+VRC Light Volumes, GPU Particle Volumes, GPU Infinite Grass, Ultimate Players Only Mirror, Perfect Water Shaders, Beautiful Sky
+
+Pema (pema99)
+BlackHole, BlackHole2, Nebula V2 Skybox, Nebula V4 WalkingNowhere, Powder Toy, ScreenFX
+
+Mochie
+Mochie Standard, Uber, Water (Tessellated), Particles, Screen FX X
+
+JetDog
+Fly Stick, Simple Toggle, Trigger Teleporter, Collider Key
+
+Vistanz (@JLChnToZ) & Yama no Buta (@butanoya)
+VizVid, Lazy Switch, VRCW Foundation
+
+Silent (s-ilent)
+Custom Tonemap, Filamented, Sunshine Flare
+
+Esnya
+Altimeter, GyroscopicIndicator, RoundIndicator
+
+Doppelganger
+Fracture 2.0.0, Optical Stream, Fractal Pyramid
+
+Kit
+Gaming Bloom, Mushroom Trip V2, Gaming Trip
+
+lox9973
+ShaderGPT, UdonTTS
+
+Poiyomi
+Poiyomi Pro, Poiyomi Toon
+
+ArchiTechVR
+ProTV, ProTV Extras
+
+Hirabiki
+SwimSystem, Udon Works
+
+CNLohr
+CN Ballpit, BrokeredSync
+
+RedMage
+Cancerspace, Cancerfree
+
+Quaternius
+LowPoly Trees, Stylized Nature MegaKit
+
+SuzuFactory
+Kaleidoscope, Marble Maze
+
+Sat Productions
+Street Lights, VRChat3DSun
+
+Leviant
+Tesseract, ScreenSpace Ubershader
+
+mikeee324
+OpenPutt
+
+Neko Mabel & Sacchan
+MS-VRCSA Billiards
+
+SpookyGhostBoo & FortisVenaliter
+E-Lanes Bowling Alley
+
+AcChosen
+VR Stage Lighting (VRSL)
+
+letsmakecoolart
+Alien Grass Pack
+
+Janooba
+Immersive Interactions
+
+Procedural Worlds
+Real Ivy
+
+Sacchan (Sacchan-VRC)
+SaccFlightAndVehicles
+
+omochi
+Dynamic MochiMochi
+
+3Dexter
+Looming Landmarks
+
+z3y
+VRCMarker Pro
+
+Markcreator
+Impressive Buttons
+
+BobyStar
+Boby's Planet Movement
+
+aurycat
+UdonPortals
+
+Gabriel Aguiar Productions
+Free Quick Effects Vol. 1
+
+Kisu
+Kisu's Petbed
+
+Noriben
+Noriben LED Panel Shader
+
+Leah Elizabeth (llealloo)
+AudioLink
+
+GGBot
+PSX Style Cars
+
+PlayerBush001
+Colour Transparent Fade
+
+Clawbird
+Generators Shader
+
+RiversideTrap
+AudioLink Spectrum Shader
+
+Texelsaur
+VideoTXL
+
+Feyris77
+Galaxy Shader
+
+Pablo Roman Andrioli & Jonathan Cohen
+Star Nest Skybox
+
+Rollthered
+Rollthered Fire Shader
+
+Shapes
+Nature Starter Kit 2
+
+Superbstingray
+UdonPlayerPlatformHook
+
+Daniel Baumgartner (Quantum)
+Quantum Particles
+
+GamerSquid
+Cherry Wood Material
+
+Temporal
+VRCPlayersOnlyMirror
+
+Alex Griffith (gravyvr)
+PSXVR Shaders
+
+BigSoundBank
+Metronome 120 BPM SFX
+
+Craig Snedeker
+Classic64 Asset Library
+
+Inigo Quilez
+Rainforest Shader
+
+Kay Lousberg
+KayKit Platformer Pack
+
+Kenney
+Minigolf Kit
+
+Misha
+Schwarzschild Black Hole
+
+myochii
+Mushroom 3D Model
+
+Paci
+Udon Wordle
+
+Polygonal Mind
+LowPoly Office
+
+Stix Games
+DirectX 11 Grass Shader
+
+ureishi
+YTTL (Video Title Viewer)
+
+VirtualFox Design Studio
+CircleMask
+
+Warren
+Warren's Fast Fur Shader (V5)
+
+----------------------------------------
+FONTS
+----------------------------------------
+
+Open MS W98 UI
+
+Noto Fonts
+
+Open Sans
